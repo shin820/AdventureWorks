@@ -1,0 +1,5 @@
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.UnitTest\bin\Debug\AdventureWorks.UnitTest.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.UnitTest\bin\Debug\AdventureWorks.UnitTest.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.UnitTest\obj\Debug\AdventureWorks.UnitTest.csprojResolveAssemblyReference.cache
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.UnitTest\obj\Debug\AdventureWorks.UnitTest.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.UnitTest\obj\Debug\AdventureWorks.UnitTest.pdb

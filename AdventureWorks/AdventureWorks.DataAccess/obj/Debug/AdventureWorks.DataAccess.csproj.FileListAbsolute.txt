@@ -1,0 +1,15 @@
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\bin\Debug\AdventureWorks.DataAccess.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\bin\Debug\AdventureWorks.DataAccess.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\bin\Debug\AdventureWorks.Model.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\bin\Debug\AdventureWorks.Model.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\obj\Debug\AdventureWorks.DataAccess.csprojResolveAssemblyReference.cache
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\obj\Debug\AdventureWorks.DataAccess.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.DataAccess\obj\Debug\AdventureWorks.DataAccess.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.DataAccess.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.DataAccess.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.Model.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\EntityFramework.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.Model.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.csprojResolveAssemblyReference.cache
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.pdb
