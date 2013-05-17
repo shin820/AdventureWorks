@@ -39,8 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesLT\Address.cs" />
+    <Compile Include="SalesLT\Customer.cs" />
+    <Compile Include="SalesLT\CustomerAddress.cs" />
+    <Compile Include="SalesLT\Product.cs" />
+    <Compile Include="SalesLT\ProductCategory.cs" />
+    <Compile Include="SalesLT\ProductDescription.cs" />
+    <Compile Include="SalesLT\ProductModel.cs" />
+    <Compile Include="SalesLT\ProductModelProductDescription.cs" />
+    <Compile Include="SalesLT\SalesOrderDetail.cs" />
+    <Compile Include="SalesLT\SalesOrderHeader.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

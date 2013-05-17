@@ -30,8 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,7 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdventureWorksLT2008.cs" />
+    <Compile Include="Mapping\AddressMapping.cs" />
+    <Compile Include="Mapping\CustomerAddressMapping.cs" />
+    <Compile Include="Mapping\CustomerMapping.cs" />
+    <Compile Include="Mapping\ErrorLogConfiguration.cs" />
+    <Compile Include="Mapping\ProductCategoryMapping.cs" />
+    <Compile Include="Mapping\ProductMapping.cs" />
+    <Compile Include="Mapping\ProductDescriptionMapping.cs" />
+    <Compile Include="Mapping\ProductModelMapping.cs" />
+    <Compile Include="Mapping\ProductModelProductDescriptionMapping.cs" />
+    <Compile Include="Mapping\SalesOrderDetailMapping.cs" />
+    <Compile Include="Mapping\SalesOrderHeaderMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureWorksLT2008.Model\AdventureWorksLT2008.Model.csproj">
+      <Project>{6e474691-98af-4f4e-b632-ea19be88e33d}</Project>
+      <Name>AdventureWorksLT2008.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
