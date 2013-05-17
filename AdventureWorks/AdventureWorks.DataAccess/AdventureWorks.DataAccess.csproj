@@ -30,8 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\360安全浏览器下载\EntityFramework.dll\codefans.net\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0-alpha3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-alpha3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -44,6 +48,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdventureWorksContext.cs" />
+    <Compile Include="Configurations\AwBuildVersionConfiguration.cs" />
+    <Compile Include="Configurations\DatabaseLogConfiguration.cs" />
+    <Compile Include="Configurations\ErrorLogConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_DepartmentConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_EmployeeAddressConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_EmployeeConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_EmployeeDepartmentHistoryConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_EmployeePayHistoryConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_JobCandidateConfiguration.cs" />
+    <Compile Include="Configurations\HumanResources\HumanResources_ShiftConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_AddressConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_AddressTypeConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_ContactConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_ContactTypeConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_CountryRegionConfiguration.cs" />
+    <Compile Include="Configurations\Person\Person_StateProvinceConfiguration.cs" />
+    <Compile Include="Database1.cs">
+      <DependentUpon>Database1.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Production_BillOfMaterialsConfiguration.cs" />
+    <Compile Include="Production_CultureConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +82,14 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Database1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Database1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,3 +3,8 @@ D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.Model\bin\De
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.Model\obj\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.Model\obj\Debug\AdventureWorks.Model.dll
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorksLT2008.Model\obj\Debug\AdventureWorks.Model.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.pdb

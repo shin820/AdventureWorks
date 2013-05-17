@@ -13,3 +13,7 @@ D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Deb
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.csprojResolveAssemblyReference.cache
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.dll
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.DataAccess.dll.config
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\EntityFramework.xml
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
