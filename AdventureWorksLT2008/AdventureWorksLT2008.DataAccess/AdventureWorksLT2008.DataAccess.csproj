@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdventureWorksLT2008.cs" />
+    <Compile Include="AdventureWorksContext.cs" />
     <Compile Include="Mapping\AddressMapping.cs" />
     <Compile Include="Mapping\CustomerAddressMapping.cs" />
     <Compile Include="Mapping\CustomerMapping.cs" />
