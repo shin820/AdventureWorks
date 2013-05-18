@@ -21,7 +21,7 @@ namespace AdventureWorks.DataAccess.Configurations.Person
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Person_StateProvince).WithMany(b => b.Person_Address).HasForeignKey(c => c.StateProvinceId); // FK_Address_StateProvince_StateProvinceID
+            HasRequired(a => a.StateProvince).WithMany(b => b.Person_Address).HasForeignKey(c => c.StateProvinceId); // FK_Address_StateProvince_StateProvinceID
         }
     }
 }

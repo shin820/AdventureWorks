@@ -34,8 +34,8 @@ namespace AdventureWorks.IntegrationTest
         //public IDbSet<Person_AddressType> Person_AddressType { get; set; } // AddressType
         //public IDbSet<Person_Contact> Person_Contact { get; set; } // Contact
         //public IDbSet<Person_ContactType> Person_ContactType { get; set; } // ContactType
-        //public IDbSet<Person_CountryRegion> Person_CountryRegion { get; set; } // CountryRegion
-        //public IDbSet<Person_StateProvince> Person_StateProvince { get; set; } // StateProvince
+        //public IDbSet<CountryRegion> CountryRegion { get; set; } // CountryRegion
+        //public IDbSet<StateProvince> StateProvince { get; set; } // StateProvince
         //public IDbSet<Production_BillOfMaterials> Production_BillOfMaterials { get; set; } // BillOfMaterials
         //public IDbSet<Production_Culture> Production_Culture { get; set; } // Culture
         //public IDbSet<Production_Document> Production_Document { get; set; } // Document
@@ -83,7 +83,7 @@ namespace AdventureWorks.IntegrationTest
         //public IDbSet<Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistory { get; set; } // SalesPersonQuotaHistory
         //public IDbSet<Sales_SalesReason> Sales_SalesReason { get; set; } // SalesReason
         //public IDbSet<Sales_SalesTaxRate> Sales_SalesTaxRate { get; set; } // SalesTaxRate
-        //public IDbSet<Sales_SalesTerritory> Sales_SalesTerritory { get; set; } // SalesTerritory
+        //public IDbSet<SalesTerritory> SalesTerritory { get; set; } // SalesTerritory
         //public IDbSet<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistory { get; set; } // SalesTerritoryHistory
         //public IDbSet<Sales_ShoppingCartItem> Sales_ShoppingCartItem { get; set; } // ShoppingCartItem
         //public IDbSet<Sales_SpecialOffer> Sales_SpecialOffer { get; set; } // SpecialOffer

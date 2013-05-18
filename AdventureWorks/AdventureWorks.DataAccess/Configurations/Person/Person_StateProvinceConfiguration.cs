@@ -4,7 +4,7 @@ using AdventureWorks.Model.Person;
 
 namespace AdventureWorks.DataAccess.Configurations.Person
 {
-    internal class Person_StateProvinceConfiguration : EntityTypeConfiguration<Person_StateProvince>
+    internal class Person_StateProvinceConfiguration : EntityTypeConfiguration<StateProvince>
     {
         public Person_StateProvinceConfiguration()
         {
@@ -21,7 +21,7 @@ namespace AdventureWorks.DataAccess.Configurations.Person
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.CountryRegionCode); // FK_StateProvince_CountryRegion_CountryRegionCode
+            HasRequired(a => a.CountryRegion).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.CountryRegionCode); // FK_StateProvince_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_SalesTerritory).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.TerritoryId); // FK_StateProvince_SalesTerritory_TerritoryID
         }
     }

@@ -14,7 +14,7 @@ namespace AdventureWorks.Model.Sales
         public DateTime ModifiedDate { get; set; } // ModifiedDate
 
         // Foreign keys
-        public virtual Person_StateProvince Person_StateProvince { get; set; } //  StateProvinceId - FK_SalesTaxRate_StateProvince_StateProvinceID
+        public virtual StateProvince StateProvince { get; set; } //  StateProvinceId - FK_SalesTaxRate_StateProvince_StateProvinceID
 
         public Sales_SalesTaxRate()
         {

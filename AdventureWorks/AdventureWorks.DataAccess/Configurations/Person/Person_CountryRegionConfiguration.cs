@@ -3,7 +3,7 @@ using AdventureWorks.Model.Person;
 
 namespace AdventureWorks.DataAccess.Configurations.Person
 {
-    internal class Person_CountryRegionConfiguration : EntityTypeConfiguration<Person_CountryRegion>
+    internal class Person_CountryRegionConfiguration : EntityTypeConfiguration<CountryRegion>
     {
         public Person_CountryRegionConfiguration()
         {

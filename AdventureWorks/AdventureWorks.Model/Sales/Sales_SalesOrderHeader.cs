@@ -43,7 +43,7 @@ namespace AdventureWorks.Model.Sales
         public virtual Sales_Customer Sales_Customer { get; set; } //  CustomerId - FK_SalesOrderHeader_Customer_CustomerID
         public virtual Person_Contact Person_Contact { get; set; } //  ContactId - FK_SalesOrderHeader_Contact_ContactID
         public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } //  SalesPersonId - FK_SalesOrderHeader_SalesPerson_SalesPersonID
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_SalesOrderHeader_SalesTerritory_TerritoryID
+        public virtual SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_SalesOrderHeader_SalesTerritory_TerritoryID
         public virtual Person_Address Person_Address { get; set; } //  BillToAddressId - FK_SalesOrderHeader_Address_BillToAddressID
         public virtual Person_Address Person_Address1 { get; set; } //  ShipToAddressId - FK_SalesOrderHeader_Address_ShipToAddressID
         public virtual Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } //  ShipMethodId - FK_SalesOrderHeader_ShipMethod_ShipMethodID

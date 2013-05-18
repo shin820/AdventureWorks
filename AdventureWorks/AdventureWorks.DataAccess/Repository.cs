@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using AdventureWorks.Model;
+using System.Linq.Expressions;
 
 namespace AdventureWorks.DataAccess
 {
@@ -18,14 +19,30 @@ namespace AdventureWorks.DataAccess
             _dbContext = dbContext;
         }
 
-        public IQueryable<T> FindAll<T>() where T : class
+        public IQueryable<T> Query<T>(Expression<Func<T, bool>> filter) where T : class
         {
-            return _dbContext.Set<T>().AsQueryable();
+            return _dbContext.Set<T>().Where(filter);
         }
 
-        public T Find<T>(int id) where T : class
+        public T Update<T>(T entity) where T : class
         {
-            return _dbContext.Set<T>().Find(id);
+            _dbContext.Set<T>().Attach(entity);
+            _dbContext.Entry<T>(entity).State = EntityState.Modified;
+            _dbContext.SaveChanges();
+            return entity;
+        }
+
+        public T Add<T>(T entity) where T : class
+        {
+            _dbContext.Set<T>().Add(entity);
+            _dbContext.SaveChanges();
+            return entity;
+        }
+
+        public void Delete<T>(T entity) where T : class
+        {
+            _dbContext.Set<T>().Remove(entity);
+            _dbContext.SaveChanges();
         }
 
         public void SaveChanges<T>(T root) where T : ObjectWithState
@@ -87,6 +104,12 @@ namespace AdventureWorks.DataAccess
                 default:
                     return EntityState.Unchanged;
             }
+        }
+
+
+        public DbEntityEntry<T> Entry<T>(T entity) where T : class
+        {
+            return _dbContext.Entry<T>(entity);
         }
     }
 }

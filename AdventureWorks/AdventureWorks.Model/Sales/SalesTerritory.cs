@@ -4,7 +4,7 @@ using AdventureWorks.Model.Person;
 
 namespace AdventureWorks.Model.Sales
 {
-    public class Sales_SalesTerritory
+    public class SalesTerritory : ObjectWithState
     {
         public int TerritoryId { get; set; } // TerritoryID (Primary key)
         public string Name { get; set; } // Name
@@ -22,9 +22,9 @@ namespace AdventureWorks.Model.Sales
         public virtual ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeader { get; set; } // SalesOrderHeader.FK_SalesOrderHeader_SalesTerritory_TerritoryID;
         public virtual ICollection<Sales_SalesPerson> Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_SalesTerritory_TerritoryID;
         public virtual ICollection<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistory { get; set; } // SalesTerritoryHistory.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID;
-        public virtual ICollection<Person_StateProvince> Person_StateProvince { get; set; } // StateProvince.FK_StateProvince_SalesTerritory_TerritoryID;
+        public virtual ICollection<StateProvince> Person_StateProvince { get; set; } // StateProvince.FK_StateProvince_SalesTerritory_TerritoryID;
 
-        public Sales_SalesTerritory()
+        public SalesTerritory()
         {
             SalesYtd = 0.00m;
             SalesLastYear = 0.00m;
@@ -36,7 +36,7 @@ namespace AdventureWorks.Model.Sales
             Sales_SalesOrderHeader = new List<Sales_SalesOrderHeader>();
             Sales_SalesPerson = new List<Sales_SalesPerson>();
             Sales_SalesTerritoryHistory = new List<Sales_SalesTerritoryHistory>();
-            Person_StateProvince = new List<Person_StateProvince>();
+            Person_StateProvince = new List<StateProvince>();
         }
     }
 }

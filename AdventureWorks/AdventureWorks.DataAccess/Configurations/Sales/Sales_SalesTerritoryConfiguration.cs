@@ -4,7 +4,7 @@ using AdventureWorks.Model.Sales;
 
 namespace AdventureWorks.DataAccess.Configurations.Sales
 {
-    internal class Sales_SalesTerritoryConfiguration : EntityTypeConfiguration<Sales_SalesTerritory>
+    internal class Sales_SalesTerritoryConfiguration : EntityTypeConfiguration<SalesTerritory>
     {
         public Sales_SalesTerritoryConfiguration()
         {

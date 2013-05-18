@@ -25,7 +25,7 @@ namespace AdventureWorks.Model.Person
         public virtual ICollection<Purchasing_VendorAddress> Purchasing_VendorAddress { get; set; } // VendorAddress.FK_VendorAddress_Address_AddressID;
 
         // Foreign keys
-        public virtual Person_StateProvince Person_StateProvince { get; set; } //  StateProvinceId - FK_Address_StateProvince_StateProvinceID
+        public virtual StateProvince StateProvince { get; set; } //  StateProvinceId - FK_Address_StateProvince_StateProvinceID
 
         public Person_Address()
         {

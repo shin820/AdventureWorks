@@ -19,7 +19,7 @@ namespace AdventureWorks.Model.Sales
         public virtual Sales_Store Sales_Store { get; set; } // Store.FK_Store_Customer_CustomerID;
 
         // Foreign keys
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_Customer_SalesTerritory_TerritoryID
+        public virtual SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_Customer_SalesTerritory_TerritoryID
 
         public Sales_Customer()
         {

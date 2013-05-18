@@ -15,7 +15,7 @@ namespace AdventureWorks.DataAccess.Configurations.Sales
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Sales_CountryRegionCurrency).HasForeignKey(c => c.CountryRegionCode); // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
+            HasRequired(a => a.CountryRegion).WithMany(b => b.Sales_CountryRegionCurrency).HasForeignKey(c => c.CountryRegionCode); // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_Currency).WithMany(b => b.Sales_CountryRegionCurrency).HasForeignKey(c => c.CurrencyCode); // FK_CountryRegionCurrency_Currency_CurrencyCode
         }
     }

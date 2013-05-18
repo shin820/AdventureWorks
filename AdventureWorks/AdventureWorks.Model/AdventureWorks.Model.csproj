@@ -62,8 +62,8 @@
     <Compile Include="Person\Person_AddressType.cs" />
     <Compile Include="Person\Person_Contact.cs" />
     <Compile Include="Person\Person_ContactType.cs" />
-    <Compile Include="Person\Person_CountryRegion.cs" />
-    <Compile Include="Person\Person_StateProvince.cs" />
+    <Compile Include="Person\CountryRegion.cs" />
+    <Compile Include="Person\StateProvince.cs" />
     <Compile Include="Production\Production_BillOfMaterials.cs" />
     <Compile Include="Production\Production_Culture.cs" />
     <Compile Include="Production\Production_Document.cs" />
@@ -112,7 +112,7 @@
     <Compile Include="Sales\Sales_SalesPersonQuotaHistory.cs" />
     <Compile Include="Sales\Sales_SalesReason.cs" />
     <Compile Include="Sales\Sales_SalesTaxRate.cs" />
-    <Compile Include="Sales\Sales_SalesTerritory.cs" />
+    <Compile Include="Sales\SalesTerritory.cs" />
     <Compile Include="Sales\Sales_SalesTerritoryHistory.cs" />
     <Compile Include="Sales\Sales_ShoppingCartItem.cs" />
     <Compile Include="Sales\Sales_SpecialOffer.cs" />
