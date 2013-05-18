@@ -19,7 +19,7 @@ namespace AdventureWorks.Model.Person
 
         // Reverse navigation
         public virtual ICollection<Sales_CustomerAddress> Sales_CustomerAddress { get; set; } // CustomerAddress.FK_CustomerAddress_Address_AddressID;
-        public virtual ICollection<HumanResources_EmployeeAddress> HumanResources_EmployeeAddress { get; set; } // EmployeeAddress.FK_EmployeeAddress_Address_AddressID;
+        public virtual ICollection<EmployeeAddress> HumanResources_EmployeeAddress { get; set; } // EmployeeAddress.FK_EmployeeAddress_Address_AddressID;
         public virtual ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeader { get; set; } // SalesOrderHeader.FK_SalesOrderHeader_Address_BillToAddressID;
         public virtual ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeader1 { get; set; } // SalesOrderHeader.FK_SalesOrderHeader_Address_ShipToAddressID;
         public virtual ICollection<Purchasing_VendorAddress> Purchasing_VendorAddress { get; set; } // VendorAddress.FK_VendorAddress_Address_AddressID;
@@ -32,7 +32,7 @@ namespace AdventureWorks.Model.Person
             Rowguid = Guid.NewGuid();
             ModifiedDate = DateTime.Now;
             Sales_CustomerAddress = new List<Sales_CustomerAddress>();
-            HumanResources_EmployeeAddress = new List<HumanResources_EmployeeAddress>();
+            HumanResources_EmployeeAddress = new List<EmployeeAddress>();
             Sales_SalesOrderHeader = new List<Sales_SalesOrderHeader>();
             Sales_SalesOrderHeader1 = new List<Sales_SalesOrderHeader>();
             Purchasing_VendorAddress = new List<Purchasing_VendorAddress>();

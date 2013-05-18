@@ -23,7 +23,7 @@ namespace AdventureWorks.Model.Sales
         public virtual ICollection<Sales_Store> Sales_Store { get; set; } // Store.FK_Store_SalesPerson_SalesPersonID;
 
         // Foreign keys
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } //  SalesPersonId - FK_SalesPerson_Employee_SalesPersonID
+        public virtual Employee Employee { get; set; } //  SalesPersonId - FK_SalesPerson_Employee_SalesPersonID
         public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_SalesPerson_SalesTerritory_TerritoryID
 
         public Sales_SalesPerson()

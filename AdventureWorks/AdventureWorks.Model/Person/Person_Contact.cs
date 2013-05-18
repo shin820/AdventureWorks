@@ -26,7 +26,7 @@ namespace AdventureWorks.Model.Person
 
         // Reverse navigation
         public virtual ICollection<Sales_ContactCreditCard> Sales_ContactCreditCard { get; set; } // ContactCreditCard.FK_ContactCreditCard_Contact_ContactID;
-        public virtual ICollection<HumanResources_Employee> HumanResources_Employee { get; set; } // Employee.FK_Employee_Contact_ContactID;
+        public virtual ICollection<Employee> HumanResources_Employee { get; set; } // Employee.FK_Employee_Contact_ContactID;
         public virtual ICollection<Sales_Individual> Sales_Individual { get; set; } // Individual.FK_Individual_Contact_ContactID;
         public virtual ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeader { get; set; } // SalesOrderHeader.FK_SalesOrderHeader_Contact_ContactID;
         public virtual ICollection<Sales_StoreContact> Sales_StoreContact { get; set; } // StoreContact.FK_StoreContact_Contact_ContactID;
@@ -39,7 +39,7 @@ namespace AdventureWorks.Model.Person
             Rowguid = Guid.NewGuid();
             ModifiedDate = DateTime.Now;
             Sales_ContactCreditCard = new List<Sales_ContactCreditCard>();
-            HumanResources_Employee = new List<HumanResources_Employee>();
+            HumanResources_Employee = new List<Employee>();
             Sales_Individual = new List<Sales_Individual>();
             Sales_SalesOrderHeader = new List<Sales_SalesOrderHeader>();
             Sales_StoreContact = new List<Sales_StoreContact>();

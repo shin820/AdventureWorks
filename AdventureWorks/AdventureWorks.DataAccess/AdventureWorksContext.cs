@@ -2,6 +2,9 @@ using System.Data.Entity;
 using AdventureWorks.DataAccess.Configurations;
 using AdventureWorks.DataAccess.Configurations.HumanResources;
 using AdventureWorks.DataAccess.Configurations.Person;
+using AdventureWorks.DataAccess.Configurations.Production;
+using AdventureWorks.DataAccess.Configurations.Purchasing;
+using AdventureWorks.DataAccess.Configurations.Sales;
 using AdventureWorks.Model;
 using AdventureWorks.Model.HumanResources;
 using AdventureWorks.Model.Person;
@@ -16,13 +19,13 @@ namespace AdventureWorks.IntegrationTest
         public IDbSet<AwBuildVersion> AwBuildVersion { get; set; } // AWBuildVersion
         public IDbSet<DatabaseLog> DatabaseLog { get; set; } // DatabaseLog
         public IDbSet<ErrorLog> ErrorLog { get; set; } // ErrorLog
-        public IDbSet<HumanResources_Department> HumanResources_Department { get; set; } // Department
-        public IDbSet<HumanResources_Employee> HumanResources_Employee { get; set; } // Employee
-        public IDbSet<HumanResources_EmployeeAddress> HumanResources_EmployeeAddress { get; set; } // EmployeeAddress
-        public IDbSet<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistory { get; set; } // EmployeeDepartmentHistory
-        public IDbSet<HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistory { get; set; } // EmployeePayHistory
-        public IDbSet<HumanResources_JobCandidate> HumanResources_JobCandidate { get; set; } // JobCandidate
-        public IDbSet<HumanResources_Shift> HumanResources_Shift { get; set; } // Shift
+        public IDbSet<Department> HumanResources_Department { get; set; } // Department
+        public IDbSet<Employee> HumanResources_Employee { get; set; } // Employee
+        public IDbSet<EmployeeAddress> HumanResources_EmployeeAddress { get; set; } // EmployeeAddress
+        public IDbSet<EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistory { get; set; } // EmployeeDepartmentHistory
+        public IDbSet<EmployeePayHistory> HumanResources_EmployeePayHistory { get; set; } // EmployeePayHistory
+        public IDbSet<JobCandidate> HumanResources_JobCandidate { get; set; } // JobCandidate
+        public IDbSet<Shift> HumanResources_Shift { get; set; } // Shift
         public IDbSet<Person_Address> Person_Address { get; set; } // Address
         public IDbSet<Person_AddressType> Person_AddressType { get; set; } // AddressType
         public IDbSet<Person_Contact> Person_Contact { get; set; } // Contact
@@ -106,13 +109,13 @@ namespace AdventureWorks.IntegrationTest
             modelBuilder.Configurations.Add(new AwBuildVersionConfiguration());
             modelBuilder.Configurations.Add(new DatabaseLogConfiguration());
             modelBuilder.Configurations.Add(new ErrorLogConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_DepartmentConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeAddressConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeDepartmentHistoryConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeePayHistoryConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_JobCandidateConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_ShiftConfiguration());
+            modelBuilder.Configurations.Add(new DepartmentConfiguration());
+            modelBuilder.Configurations.Add(new EmployeeConfiguration());
+            modelBuilder.Configurations.Add(new EmployeeAddressConfiguration());
+            modelBuilder.Configurations.Add(new EmployeeDepartmentHistoryConfiguration());
+            modelBuilder.Configurations.Add(new EmployeePayHistoryConfiguration());
+            modelBuilder.Configurations.Add(new JobCandidateConfiguration());
+            modelBuilder.Configurations.Add(new ShiftConfiguration());
             modelBuilder.Configurations.Add(new Person_AddressConfiguration());
             modelBuilder.Configurations.Add(new Person_AddressTypeConfiguration());
             modelBuilder.Configurations.Add(new Person_ContactConfiguration());

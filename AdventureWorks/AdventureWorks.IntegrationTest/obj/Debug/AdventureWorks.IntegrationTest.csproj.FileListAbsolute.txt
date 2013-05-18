@@ -21,3 +21,5 @@ D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bi
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\EntityFramework.SqlServer.dll
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\EntityFramework.xml
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\nunit.framework.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\nunit.framework.xml

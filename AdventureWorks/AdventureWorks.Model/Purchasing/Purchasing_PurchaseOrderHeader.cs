@@ -24,7 +24,7 @@ namespace AdventureWorks.Model.Purchasing
         public virtual ICollection<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetail { get; set; } // PurchaseOrderDetail.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID;
 
         // Foreign keys
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } //  EmployeeId - FK_PurchaseOrderHeader_Employee_EmployeeID
+        public virtual Employee Employee { get; set; } //  EmployeeId - FK_PurchaseOrderHeader_Employee_EmployeeID
         public virtual Purchasing_Vendor Purchasing_Vendor { get; set; } //  VendorId - FK_PurchaseOrderHeader_Vendor_VendorID
         public virtual Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } //  ShipMethodId - FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
 
