@@ -3,7 +3,7 @@ using AdventureWorks.Model.Person;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class EmployeeAddress
+    public class EmployeeAddress : ObjectWithState
     {
         public int EmployeeId { get; set; } // EmployeeID (Primary key)
         public int AddressId { get; set; } // AddressID (Primary key)

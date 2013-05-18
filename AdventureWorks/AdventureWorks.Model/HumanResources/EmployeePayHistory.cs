@@ -2,7 +2,7 @@ using System;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class EmployeePayHistory
+    public class EmployeePayHistory : ObjectWithState
     {
         public int EmployeeId { get; set; } // EmployeeID (Primary key)
         public DateTime RateChangeDate { get; set; } // RateChangeDate (Primary key)

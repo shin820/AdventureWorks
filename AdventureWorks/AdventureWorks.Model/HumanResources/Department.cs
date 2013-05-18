@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class Department
+    public class Department : ObjectWithState
     {
         public short DepartmentId { get; set; } // DepartmentID (Primary key)
         public string Name { get; set; } // Name

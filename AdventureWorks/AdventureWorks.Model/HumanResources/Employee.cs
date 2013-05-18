@@ -6,7 +6,7 @@ using AdventureWorks.Model.Sales;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class Employee
+    public class Employee : ObjectWithState
     {
         public int EmployeeId { get; set; } // EmployeeID (Primary key)
         public string NationalIdNumber { get; set; } // NationalIDNumber
@@ -26,17 +26,17 @@ namespace AdventureWorks.Model.HumanResources
         public DateTime ModifiedDate { get; set; } // ModifiedDate
 
         // Reverse navigation
-        public virtual ICollection<Employee> Subordinates { get; set; } // Employee.FK_Employee_Employee_ManagerID;
-        public virtual ICollection<EmployeeAddress> EmployeeAddresses { get; set; } // EmployeeAddress.FK_EmployeeAddress_Employee_EmployeeID;
-        public virtual ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_EmployeeID;
-        public virtual ICollection<EmployeePayHistory> EmployeePayHistories { get; set; } // EmployeePayHistory.FK_EmployeePayHistory_Employee_EmployeeID;
-        public virtual ICollection<JobCandidate> JobCandidates { get; set; } // JobCandidate.FK_JobCandidate_Employee_EmployeeID;
-        public virtual ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeader { get; set; } // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
+        public ICollection<Employee> Subordinates { get; set; } // Employee.FK_Employee_Employee_ManagerID;
+        public ICollection<EmployeeAddress> EmployeeAddresses { get; set; } // EmployeeAddress.FK_EmployeeAddress_Employee_EmployeeID;
+        public ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_EmployeeID;
+        public ICollection<EmployeePayHistory> EmployeePayHistories { get; set; } // EmployeePayHistory.FK_EmployeePayHistory_Employee_EmployeeID;
+        public ICollection<JobCandidate> JobCandidates { get; set; } // JobCandidate.FK_JobCandidate_Employee_EmployeeID;
+        public ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeader { get; set; } // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
+        public Sales_SalesPerson Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
 
         // Foreign keys
-        public virtual Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
-        public virtual Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
+        public Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
+        public Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
 
         public Employee()
         {

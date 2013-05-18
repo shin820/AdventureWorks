@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class Shift
+    public class Shift : ObjectWithState
     {
         public byte ShiftId { get; set; } // ShiftID (Primary key)
         public string Name { get; set; } // Name

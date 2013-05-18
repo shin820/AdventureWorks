@@ -6,7 +6,7 @@ using AdventureWorks.Model.Sales;
 
 namespace AdventureWorks.Model.Person
 {
-    public class Person_Contact
+    public class Person_Contact:ObjectWithState
     {
         public int ContactId { get; set; } // ContactID (Primary key)
         public bool NameStyle { get; set; } // NameStyle

@@ -120,6 +120,8 @@
     <Compile Include="Configurations\Sales\Sales_StoreConfiguration.cs" />
     <Compile Include="Configurations\Sales\Sales_StoreContactConfiguration.cs" />
     <Compile Include="Configurations\Sales\Sales_WebSiteHitsConfiguration.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

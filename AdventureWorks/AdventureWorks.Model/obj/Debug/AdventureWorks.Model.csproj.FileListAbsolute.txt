@@ -8,3 +8,8 @@ D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\obj\Debug\Ad
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.pdb
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.dll
 D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.pdb
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.dll.config
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\EntityFramework.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\EntityFramework.xml
+D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.Model\bin\Debug\EntityFramework.SqlServer.xml

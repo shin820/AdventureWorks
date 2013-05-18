@@ -30,8 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0-alpha3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-alpha3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +57,7 @@
     <Compile Include="HumanResources\EmployeePayHistory.cs" />
     <Compile Include="HumanResources\JobCandidate.cs" />
     <Compile Include="HumanResources\Shift.cs" />
+    <Compile Include="ObjectWithState.cs" />
     <Compile Include="Person\Person_Address.cs" />
     <Compile Include="Person\Person_AddressType.cs" />
     <Compile Include="Person\Person_Contact.cs" />
@@ -112,7 +121,10 @@
     <Compile Include="Sales\Sales_StoreContact.cs" />
     <Compile Include="Sales\Sales_WebSiteHits.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

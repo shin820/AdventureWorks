@@ -2,7 +2,7 @@ using System;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class JobCandidate
+    public class JobCandidate : ObjectWithState
     {
         public int JobCandidateId { get; set; } // JobCandidateID (Primary key)
         public int? EmployeeId { get; set; } // EmployeeID

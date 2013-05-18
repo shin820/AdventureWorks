@@ -2,7 +2,7 @@ using System;
 
 namespace AdventureWorks.Model.HumanResources
 {
-    public class EmployeeDepartmentHistory
+    public class EmployeeDepartmentHistory : ObjectWithState
     {
         public int EmployeeId { get; set; } // EmployeeID (Primary key)
         public short DepartmentId { get; set; } // DepartmentID (Primary key)
