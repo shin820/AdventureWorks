@@ -29,3 +29,6 @@ E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\De
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.csprojResolveAssemblyReference.cache
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.dll
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\obj\Debug\AdventureWorks.DataAccess.pdb
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.Infrastructure.dll
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\log4net.dll
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.DataAccess\bin\Debug\AdventureWorks.Infrastructure.pdb

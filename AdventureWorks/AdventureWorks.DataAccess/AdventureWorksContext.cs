@@ -9,6 +9,7 @@ using AdventureWorks.DataAccess.Configurations.Person;
 using AdventureWorks.DataAccess.Configurations.Production;
 using AdventureWorks.DataAccess.Configurations.Purchasing;
 using AdventureWorks.DataAccess.Configurations.Sales;
+using AdventureWorks.Infrastructure;
 using AdventureWorks.Model;
 using AdventureWorks.Model.HumanResources;
 using AdventureWorks.Model.Person;
@@ -217,6 +218,12 @@ namespace AdventureWorks.IntegrationTest
             modelBuilder.Configurations.Add(new Sales_StoreConfiguration());
             modelBuilder.Configurations.Add(new Sales_StoreContactConfiguration());
             modelBuilder.Configurations.Add(new Sales_WebSiteHitsConfiguration());
+        }
+
+        public override int SaveChanges()
+        {
+            Logger.Instance.Info("test1111");
+            return base.SaveChanges();
         }
     }
 }

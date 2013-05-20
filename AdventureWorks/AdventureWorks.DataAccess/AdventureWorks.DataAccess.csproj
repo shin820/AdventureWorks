@@ -125,6 +125,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdventureWorks.Infrastructure\AdventureWorks.Infrastructure.csproj">
+      <Project>{bbb87c95-bdc3-409f-a5ac-96629c7f7a18}</Project>
+      <Name>AdventureWorks.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AdventureWorks.Model\AdventureWorks.Model.csproj">
       <Project>{6e474691-98af-4f4e-b632-ea19be88e33d}</Project>
       <Name>AdventureWorks.Model</Name>

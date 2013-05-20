@@ -39,3 +39,6 @@ E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\b
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\obj\Debug\AdventureWorks.IntegrationTest.csprojResolveAssemblyReference.cache
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\obj\Debug\AdventureWorks.IntegrationTest.dll
 E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\obj\Debug\AdventureWorks.IntegrationTest.pdb
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\AdventureWorks.Infrastructure.dll
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\log4net.dll
+E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\AdventureWorks.Infrastructure.pdb
