@@ -22,7 +22,7 @@ namespace AdventureWorks.DataAccess.Configurations.Sales
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Employee).WithOptional(b => b.Sales_SalesPerson); // FK_SalesPerson_Employee_SalesPersonID
+            HasRequired(a => a.Employee).WithOptional(b => b.SalesPersons); // FK_SalesPerson_Employee_SalesPersonID
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_SalesPerson).HasForeignKey(c => c.TerritoryId); // FK_SalesPerson_SalesTerritory_TerritoryID
         }
     }

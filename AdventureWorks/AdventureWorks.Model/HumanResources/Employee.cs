@@ -31,8 +31,8 @@ namespace AdventureWorks.Model.HumanResources
         public ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_EmployeeID;
         public ICollection<EmployeePayHistory> EmployeePayHistories { get; set; } // EmployeePayHistory.FK_EmployeePayHistory_Employee_EmployeeID;
         public ICollection<JobCandidate> JobCandidates { get; set; } // JobCandidate.FK_JobCandidate_Employee_EmployeeID;
-        public ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeader { get; set; } // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
-        public Sales_SalesPerson Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
+        public ICollection<Purchasing_PurchaseOrderHeader> PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
+        public Sales_SalesPerson SalesPersons { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
 
         // Foreign keys
         public Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
@@ -51,7 +51,7 @@ namespace AdventureWorks.Model.HumanResources
             EmployeeDepartmentHistories = new List<EmployeeDepartmentHistory>();
             EmployeePayHistories = new List<EmployeePayHistory>();
             JobCandidates = new List<JobCandidate>();
-            Purchasing_PurchaseOrderHeader = new List<Purchasing_PurchaseOrderHeader>();
+            PurchaseOrderHeaders = new List<Purchasing_PurchaseOrderHeader>();
         }
     }
 }

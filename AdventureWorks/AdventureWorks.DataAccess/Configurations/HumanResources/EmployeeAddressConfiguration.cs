@@ -18,7 +18,7 @@ namespace AdventureWorks.DataAccess.Configurations.HumanResources
 
             // Foreign keys
             HasRequired(a => a.Employee).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.EmployeeId); // FK_EmployeeAddress_Employee_EmployeeID
-            HasRequired(a => a.Person_Address).WithMany(b => b.HumanResources_EmployeeAddress).HasForeignKey(c => c.AddressId); // FK_EmployeeAddress_Address_AddressID
+            HasRequired(a => a.PersonAddresses).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.AddressId); // FK_EmployeeAddress_Address_AddressID
         }
     }
 }

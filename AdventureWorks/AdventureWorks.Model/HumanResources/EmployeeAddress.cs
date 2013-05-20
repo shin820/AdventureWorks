@@ -12,7 +12,7 @@ namespace AdventureWorks.Model.HumanResources
 
         // Foreign keys
         public virtual Employee Employee { get; set; } //  EmployeeId - FK_EmployeeAddress_Employee_EmployeeID
-        public virtual Person_Address Person_Address { get; set; } //  AddressId - FK_EmployeeAddress_Address_AddressID
+        public virtual PersonAddress PersonAddresses { get; set; } //  AddressId - FK_EmployeeAddress_Address_AddressID
 
         public EmployeeAddress()
         {

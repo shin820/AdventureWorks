@@ -26,7 +26,7 @@ namespace AdventureWorks.DataAccess.Configurations.Purchasing
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Employee).WithMany(b => b.Purchasing_PurchaseOrderHeader).HasForeignKey(c => c.EmployeeId); // FK_PurchaseOrderHeader_Employee_EmployeeID
+            HasRequired(a => a.Employee).WithMany(b => b.PurchaseOrderHeaders).HasForeignKey(c => c.EmployeeId); // FK_PurchaseOrderHeader_Employee_EmployeeID
             HasRequired(a => a.Purchasing_Vendor).WithMany(b => b.Purchasing_PurchaseOrderHeader).HasForeignKey(c => c.VendorId); // FK_PurchaseOrderHeader_Vendor_VendorID
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Purchasing_PurchaseOrderHeader).HasForeignKey(c => c.ShipMethodId); // FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
         }

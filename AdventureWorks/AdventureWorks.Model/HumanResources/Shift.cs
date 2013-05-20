@@ -12,12 +12,12 @@ namespace AdventureWorks.Model.HumanResources
         public DateTime ModifiedDate { get; set; } // ModifiedDate
 
         // Reverse navigation
-        public virtual ICollection<EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistory { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Shift_ShiftID;
+        public ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Shift_ShiftID;
 
         public Shift()
         {
             ModifiedDate = DateTime.Now;
-            HumanResources_EmployeeDepartmentHistory = new List<EmployeeDepartmentHistory>();
+            EmployeeDepartmentHistories = new List<EmployeeDepartmentHistory>();
         }
     }
 }

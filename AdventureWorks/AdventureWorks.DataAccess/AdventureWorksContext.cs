@@ -25,12 +25,12 @@ namespace AdventureWorks.IntegrationTest
         //public IDbSet<ErrorLog> ErrorLog { get; set; } // ErrorLog
         //public IDbSet<Department> HumanResources_Department { get; set; } // Department
         //public IDbSet<Employee> HumanResources_Employee { get; set; } // Employee
-        //public IDbSet<EmployeeAddress> HumanResources_EmployeeAddress { get; set; } // EmployeeAddress
-        //public IDbSet<EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistory { get; set; } // EmployeeDepartmentHistory
+        //public IDbSet<EmployeeAddress> EmployeeAddresses { get; set; } // EmployeeAddress
+        //public IDbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory
         //public IDbSet<EmployeePayHistory> HumanResources_EmployeePayHistory { get; set; } // EmployeePayHistory
         //public IDbSet<JobCandidate> HumanResources_JobCandidate { get; set; } // JobCandidate
         //public IDbSet<Shift> HumanResources_Shift { get; set; } // Shift
-        //public IDbSet<Person_Address> Person_Address { get; set; } // Address
+        //public IDbSet<PersonAddresses> PersonAddresses { get; set; } // Address
         //public IDbSet<Person_AddressType> Person_AddressType { get; set; } // AddressType
         //public IDbSet<Person_Contact> Person_Contact { get; set; } // Contact
         //public IDbSet<Person_ContactType> Person_ContactType { get; set; } // ContactType
@@ -63,10 +63,10 @@ namespace AdventureWorks.IntegrationTest
         //public IDbSet<Production_WorkOrderRouting> Production_WorkOrderRouting { get; set; } // WorkOrderRouting
         //public IDbSet<Purchasing_ProductVendor> Purchasing_ProductVendor { get; set; } // ProductVendor
         //public IDbSet<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetail { get; set; } // PurchaseOrderDetail
-        //public IDbSet<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeader { get; set; } // PurchaseOrderHeader
+        //public IDbSet<PurchaseOrderHeaders> PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader
         //public IDbSet<Purchasing_ShipMethod> Purchasing_ShipMethod { get; set; } // ShipMethod
         //public IDbSet<Purchasing_Vendor> Purchasing_Vendor { get; set; } // Vendor
-        //public IDbSet<Purchasing_VendorAddress> Purchasing_VendorAddress { get; set; } // VendorAddress
+        //public IDbSet<VendorAddresses> VendorAddresses { get; set; } // VendorAddress
         //public IDbSet<Purchasing_VendorContact> Purchasing_VendorContact { get; set; } // VendorContact
         //public IDbSet<Sales_ContactCreditCard> Sales_ContactCreditCard { get; set; } // ContactCreditCard
         //public IDbSet<Sales_CountryRegionCurrency> Sales_CountryRegionCurrency { get; set; } // CountryRegionCurrency
@@ -74,15 +74,15 @@ namespace AdventureWorks.IntegrationTest
         //public IDbSet<Sales_Currency> Sales_Currency { get; set; } // Currency
         //public IDbSet<Sales_CurrencyRate> Sales_CurrencyRate { get; set; } // CurrencyRate
         //public IDbSet<Sales_Customer> Sales_Customer { get; set; } // Customer
-        //public IDbSet<Sales_CustomerAddress> Sales_CustomerAddress { get; set; } // CustomerAddress
+        //public IDbSet<CustomerAddresses> CustomerAddresses { get; set; } // CustomerAddress
         //public IDbSet<Sales_Individual> Sales_Individual { get; set; } // Individual
         //public IDbSet<Sales_SalesOrderDetail> Sales_SalesOrderDetail { get; set; } // SalesOrderDetail
-        //public IDbSet<Sales_SalesOrderHeader> Sales_SalesOrderHeader { get; set; } // SalesOrderHeader
+        //public IDbSet<BillToSalesOrderHeaders> BillToSalesOrderHeaders { get; set; } // SalesOrderHeader
         //public IDbSet<Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReason { get; set; } // SalesOrderHeaderSalesReason
-        //public IDbSet<Sales_SalesPerson> Sales_SalesPerson { get; set; } // SalesPerson
+        //public IDbSet<SalesPersons> SalesPersons { get; set; } // SalesPerson
         //public IDbSet<Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistory { get; set; } // SalesPersonQuotaHistory
         //public IDbSet<Sales_SalesReason> Sales_SalesReason { get; set; } // SalesReason
-        //public IDbSet<Sales_SalesTaxRate> Sales_SalesTaxRate { get; set; } // SalesTaxRate
+        //public IDbSet<SalesTaxRates> SalesTaxRates { get; set; } // SalesTaxRate
         //public IDbSet<SalesTerritory> SalesTerritory { get; set; } // SalesTerritory
         //public IDbSet<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistory { get; set; } // SalesTerritoryHistory
         //public IDbSet<Sales_ShoppingCartItem> Sales_ShoppingCartItem { get; set; } // ShoppingCartItem

@@ -20,7 +20,7 @@ namespace AdventureWorks.DataAccess.Configurations.Sales
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.StateProvince).WithMany(b => b.Sales_SalesTaxRate).HasForeignKey(c => c.StateProvinceId); // FK_SalesTaxRate_StateProvince_StateProvinceID
+            HasRequired(a => a.StateProvince).WithMany(b => b.SalesTaxRates).HasForeignKey(c => c.StateProvinceId); // FK_SalesTaxRate_StateProvince_StateProvinceID
         }
     }
 }

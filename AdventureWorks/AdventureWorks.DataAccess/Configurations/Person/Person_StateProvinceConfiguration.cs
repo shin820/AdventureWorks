@@ -22,7 +22,7 @@ namespace AdventureWorks.DataAccess.Configurations.Person
 
             // Foreign keys
             HasRequired(a => a.CountryRegion).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.CountryRegionCode); // FK_StateProvince_CountryRegion_CountryRegionCode
-            HasRequired(a => a.Sales_SalesTerritory).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.TerritoryId); // FK_StateProvince_SalesTerritory_TerritoryID
+            HasRequired(a => a.SalesTerritory).WithMany(b => b.Person_StateProvince).HasForeignKey(c => c.TerritoryId); // FK_StateProvince_SalesTerritory_TerritoryID
         }
     }
 }

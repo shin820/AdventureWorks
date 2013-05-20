@@ -20,8 +20,8 @@ namespace AdventureWorks.DataAccess.Configurations.HumanResources
 
             // Foreign keys
             HasRequired(a => a.Employee).WithMany(b => b.EmployeeDepartmentHistories).HasForeignKey(c => c.EmployeeId); // FK_EmployeeDepartmentHistory_Employee_EmployeeID
-            HasRequired(a => a.Department).WithMany(b => b.HumanResources_EmployeeDepartmentHistory).HasForeignKey(c => c.DepartmentId); // FK_EmployeeDepartmentHistory_Department_DepartmentID
-            HasRequired(a => a.Shift).WithMany(b => b.HumanResources_EmployeeDepartmentHistory).HasForeignKey(c => c.ShiftId); // FK_EmployeeDepartmentHistory_Shift_ShiftID
+            HasRequired(a => a.Department).WithMany(b => b.EmployeeDepartmentHistories).HasForeignKey(c => c.DepartmentId); // FK_EmployeeDepartmentHistory_Department_DepartmentID
+            HasRequired(a => a.Shift).WithMany(b => b.EmployeeDepartmentHistories).HasForeignKey(c => c.ShiftId); // FK_EmployeeDepartmentHistory_Shift_ShiftID
         }
     }
 }

@@ -44,8 +44,8 @@ namespace AdventureWorks.DataAccess.Configurations.Sales
             HasRequired(a => a.Person_Contact).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.ContactId); // FK_SalesOrderHeader_Contact_ContactID
             HasOptional(a => a.Sales_SalesPerson).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.SalesPersonId); // FK_SalesOrderHeader_SalesPerson_SalesPersonID
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.TerritoryId); // FK_SalesOrderHeader_SalesTerritory_TerritoryID
-            HasRequired(a => a.Person_Address).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.BillToAddressId); // FK_SalesOrderHeader_Address_BillToAddressID
-            HasRequired(a => a.Person_Address1).WithMany(b => b.Sales_SalesOrderHeader1).HasForeignKey(c => c.ShipToAddressId); // FK_SalesOrderHeader_Address_ShipToAddressID
+            HasRequired(a => a.Person_Address).WithMany(b => b.BillToSalesOrderHeaders).HasForeignKey(c => c.BillToAddressId); // FK_SalesOrderHeader_Address_BillToAddressID
+            HasRequired(a => a.Person_Address1).WithMany(b => b.ShipToSalesOrderHeaders).HasForeignKey(c => c.ShipToAddressId); // FK_SalesOrderHeader_Address_ShipToAddressID
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.ShipMethodId); // FK_SalesOrderHeader_ShipMethod_ShipMethodID
             HasOptional(a => a.Sales_CreditCard).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.CreditCardId); // FK_SalesOrderHeader_CreditCard_CreditCardID
             HasOptional(a => a.Sales_CurrencyRate).WithMany(b => b.Sales_SalesOrderHeader).HasForeignKey(c => c.CurrencyRateId); // FK_SalesOrderHeader_CurrencyRate_CurrencyRateID

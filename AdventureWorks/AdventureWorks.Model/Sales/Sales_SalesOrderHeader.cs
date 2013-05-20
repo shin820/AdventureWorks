@@ -44,8 +44,8 @@ namespace AdventureWorks.Model.Sales
         public virtual Person_Contact Person_Contact { get; set; } //  ContactId - FK_SalesOrderHeader_Contact_ContactID
         public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } //  SalesPersonId - FK_SalesOrderHeader_SalesPerson_SalesPersonID
         public virtual SalesTerritory Sales_SalesTerritory { get; set; } //  TerritoryId - FK_SalesOrderHeader_SalesTerritory_TerritoryID
-        public virtual Person_Address Person_Address { get; set; } //  BillToAddressId - FK_SalesOrderHeader_Address_BillToAddressID
-        public virtual Person_Address Person_Address1 { get; set; } //  ShipToAddressId - FK_SalesOrderHeader_Address_ShipToAddressID
+        public virtual PersonAddress Person_Address { get; set; } //  BillToAddressId - FK_SalesOrderHeader_Address_BillToAddressID
+        public virtual PersonAddress Person_Address1 { get; set; } //  ShipToAddressId - FK_SalesOrderHeader_Address_ShipToAddressID
         public virtual Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } //  ShipMethodId - FK_SalesOrderHeader_ShipMethod_ShipMethodID
         public virtual Sales_CreditCard Sales_CreditCard { get; set; } //  CreditCardId - FK_SalesOrderHeader_CreditCard_CreditCardID
         public virtual Sales_CurrencyRate Sales_CurrencyRate { get; set; } //  CurrencyRateId - FK_SalesOrderHeader_CurrencyRate_CurrencyRateID

@@ -58,7 +58,7 @@
     <Compile Include="HumanResources\JobCandidate.cs" />
     <Compile Include="HumanResources\Shift.cs" />
     <Compile Include="ObjectWithState.cs" />
-    <Compile Include="Person\Person_Address.cs" />
+    <Compile Include="Person\PersonAddress.cs" />
     <Compile Include="Person\Person_AddressType.cs" />
     <Compile Include="Person\Person_Contact.cs" />
     <Compile Include="Person\Person_ContactType.cs" />
