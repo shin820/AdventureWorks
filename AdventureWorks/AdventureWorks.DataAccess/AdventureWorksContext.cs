@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.Linq;
 using AdventureWorks.DataAccess.Configurations;
 using AdventureWorks.DataAccess.Configurations.HumanResources;
 using AdventureWorks.DataAccess.Configurations.Person;
@@ -95,15 +97,23 @@ namespace AdventureWorks.DataAccess
         //    : base("Name=AdventureWorks")
         //{
         //}
+        private ILogger _logger;
 
-        public AdventureWorksContext(string connectionString) : base(connectionString)
+        public AdventureWorksContext(string connectionString)
+            : this(connectionString, Logger.Instance)
         {
+        }
+
+        public AdventureWorksContext(string connectionString, ILogger logger)
+            : base(connectionString)
+        {
+            _logger = logger;
             SetOriginalValues();
         }
 
         private void SetOriginalValues()
         {
-            ((System.Data.Entity.Infrastructure.IObjectContextAdapter) this).ObjectContext.ObjectMaterialized +=
+            ((IObjectContextAdapter) this).ObjectContext.ObjectMaterialized +=
                 (sender, args) =>
                     {
                         var entity = args.Entity as ObjectWithState;
@@ -215,8 +225,63 @@ namespace AdventureWorks.DataAccess
 
         public override int SaveChanges()
         {
-            Logger.Instance.Info("test1111");
+            LogChanges();
             return base.SaveChanges();
+        }
+
+        private void LogChanges()
+        {
+            var entries = this.ChangeTracker.Entries().Where(e => e.State != EntityState.Unchanged);
+            foreach (var entry in entries)
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        _logger.DebugFormat("Adding a {0}", entry.Entity.GetType());
+                        LogPropertyValues(entry.CurrentValues, entry.CurrentValues.PropertyNames);
+                        break;
+                    case EntityState.Deleted:
+                        _logger.DebugFormat("Deleting a {0}", entry.Entity.GetType());
+                        LogPropertyValues(entry.OriginalValues, GetKeyProperties(entry.Entity));
+                        break;
+                    case EntityState.Modified:
+                        _logger.DebugFormat("Modifying a {0}", entry.Entity.GetType());
+
+                        DbEntityEntry modifiedEntry = entry;
+                        var modifiedProperties = from n in entry.CurrentValues.PropertyNames
+                                                 where modifiedEntry.Property(n).IsModified
+                                                 select n;
+                        LogPropertyValues(entry.CurrentValues, GetKeyProperties(entry.Entity).Concat(modifiedProperties));
+                        break;
+                }
+            }
+        }
+
+        private void LogPropertyValues(DbPropertyValues values, IEnumerable<string> propertiesToLog, int indent = 1)
+        {
+            foreach (var propertyName in propertiesToLog)
+            {
+                var complexProperty = values[propertyName] as DbPropertyValues;
+                if (complexProperty != null)
+                {
+                    _logger.DebugFormat("{0}- Complex Property : {1}", string.Empty.PadLeft(indent), propertyName);
+                    LogPropertyValues(complexProperty, complexProperty.PropertyNames, indent + 1);
+                }
+                else
+                {
+                    _logger.DebugFormat("{0}- {1} : {2}", string.Empty.PadLeft(indent), propertyName,
+                                        values[propertyName]);
+                }
+            }
+        }
+
+        private IEnumerable<string> GetKeyProperties(object entity)
+        {
+            ObjectStateEntry entry;
+            ((IObjectContextAdapter) this).ObjectContext
+                                          .ObjectStateManager.TryGetObjectStateEntry(entity, out entry);
+
+            return entry != null ? entry.EntityKey.EntityKeyValues.Select(k => k.Key) : new List<string>();
         }
     }
 }

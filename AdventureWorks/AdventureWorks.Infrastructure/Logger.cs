@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventureWorks.Infrastructure
 {
-    public class Logger
+    public class Logger : ILogger
     {
         private readonly log4net.ILog _log;
         private const string DEFAULT_LOG_CONFIG_FILE = "configuration\\log4net.config";
@@ -67,14 +63,6 @@ namespace AdventureWorks.Infrastructure
             get
             {
                 return SingletonProvider<Logger>.Instance;
-            }
-        }
-
-        public bool NeedLog
-        {
-            get
-            {
-                return _log.IsErrorEnabled;
             }
         }
 

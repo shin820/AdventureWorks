@@ -12,22 +12,20 @@ namespace AdventureWorks.DataAccess
 {
     public class Repository : IRepository
     {
-        protected DbContext _dbContext;
+        private readonly DbContext _dbContext;
 
         public Repository(DbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public IQueryable<T> Query<T>(Expression<Func<T, bool>> filter) where T : class
+        public IQueryable<T> Find<T>(Expression<Func<T, bool>> filter) where T : class
         {
             return _dbContext.Set<T>().Where(filter);
         }
 
         public T Update<T>(T entity) where T : class
         {
-            _dbContext.Set<T>().Attach(entity);
-            _dbContext.Entry<T>(entity).State = EntityState.Modified;
             _dbContext.SaveChanges();
             return entity;
         }
@@ -81,7 +79,7 @@ namespace AdventureWorks.DataAccess
         {
             foreach (var originalValue in originalValues)
             {
-                IDictionary<string, object> complexTypeProperty = originalValue.Value as IDictionary<string, object>;
+                var complexTypeProperty = originalValue.Value as IDictionary<string, object>;
                 if (complexTypeProperty != null)
                 {
                     ApplyPropertyChnages((DbPropertyValues) values[originalValue.Key], complexTypeProperty);
@@ -104,12 +102,6 @@ namespace AdventureWorks.DataAccess
                 default:
                     return EntityState.Unchanged;
             }
-        }
-
-
-        public DbEntityEntry<T> Entry<T>(T entity) where T : class
-        {
-            return _dbContext.Entry<T>(entity);
         }
     }
 }

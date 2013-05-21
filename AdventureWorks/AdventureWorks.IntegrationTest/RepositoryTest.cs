@@ -45,7 +45,7 @@ namespace AdventureWorks.IntegrationTest
             _repository.Update(department);
 
             Department updatedDepartment =
-                _repository.Query<Department>(d => d.Name == updatedName).FirstOrDefault();
+                _repository.Find<Department>(d => d.Name == updatedName).FirstOrDefault();
 
             Assert.IsNotNull(updatedDepartment);
             DeleteTestDepartments();
@@ -67,7 +67,7 @@ namespace AdventureWorks.IntegrationTest
         {
             AddTestStateProvinces();
 
-            StateProvince stateProvince = _repository.Query<StateProvince>(t => t.Name == "TEST_STATE_PROVINCE").Single();
+            StateProvince stateProvince = _repository.Find<StateProvince>(t => t.Name == "TEST_STATE_PROVINCE").Single();
             Assert.IsNotNull(stateProvince);
             Assert.IsNotNull(stateProvince.CountryRegion);
             Assert.IsNotNull(stateProvince.SalesTerritory);
@@ -77,7 +77,7 @@ namespace AdventureWorks.IntegrationTest
 
         private IQueryable<Department> GetTestDepartments()
         {
-            return _repository.Query<Department>(d => d.GroupName == "Test Group");
+            return _repository.Find<Department>(d => d.GroupName == "Test Group");
         }
 
         private void AddTestDepartments()
@@ -146,7 +146,7 @@ namespace AdventureWorks.IntegrationTest
         private void DeleteTestStateProvince()
         {
             StateProvince stateProvince =
-                _repository.Query<StateProvince>(t => t.Name == "TEST_STATE_PROVINCE").SingleOrDefault();
+                _repository.Find<StateProvince>(t => t.Name == "TEST_STATE_PROVINCE").SingleOrDefault();
             if (stateProvince == null) return;
 
             stateProvince.State = State.Deleted;

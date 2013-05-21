@@ -11,11 +11,10 @@ namespace AdventureWorks.DataAccess
 {
     public interface IRepository
     {
-        IQueryable<T> Query<T>(Expression<Func<T, bool>> filter) where T : class;
+        IQueryable<T> Find<T>(Expression<Func<T, bool>> filter) where T : class;
         T Update<T>(T entity) where T : class;
         T Add<T>(T entity) where T : class;
         void Delete<T>(T entity) where T : class;
-        DbEntityEntry<T> Entry<T>(T entity) where T : class;
         void SaveChanges<T>(T root) where T : ObjectWithState;
     }
 }

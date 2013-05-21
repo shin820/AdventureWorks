@@ -1,0 +1,647 @@
+[05/21/2013 10:40:23,481][INFO ]:test1111
+[05/21/2013 10:40:23,710][INFO ]:test1111
+[05/21/2013 10:40:23,727][INFO ]:test1111
+[05/21/2013 10:40:23,735][INFO ]:test1111
+[05/21/2013 10:40:23,758][INFO ]:test1111
+[05/21/2013 10:40:23,816][INFO ]:test1111
+[05/21/2013 10:40:23,919][INFO ]:test1111
+[05/21/2013 10:40:23,921][INFO ]:test1111
+[05/21/2013 10:40:23,924][INFO ]:test1111
+[05/21/2013 10:40:23,927][INFO ]:test1111
+[05/21/2013 10:40:23,929][INFO ]:test1111
+[05/21/2013 10:40:23,931][INFO ]:test1111
+[05/21/2013 10:40:23,951][INFO ]:test1111
+[05/21/2013 10:40:23,958][INFO ]:test1111
+[05/21/2013 10:40:23,959][INFO ]:test1111
+[05/21/2013 12:18:17,700][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:17,731][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:17,731][DEBUG]: - Name : Test Department1
+[05/21/2013 12:18:17,732][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:17,732][DEBUG]: - ModifiedDate : 05/21/2013 12:18:17
+[05/21/2013 12:18:18,983][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:18,983][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:18,983][DEBUG]: - Name : Test Department2
+[05/21/2013 12:18:18,983][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:18,983][DEBUG]: - ModifiedDate : 05/21/2013 12:18:17
+[05/21/2013 12:18:19,078][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:19,079][DEBUG]: - DepartmentId : 89
+[05/21/2013 12:18:19,157][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:19,157][DEBUG]: - DepartmentId : 90
+[05/21/2013 12:18:19,212][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:19,213][DEBUG]: - StateProvinceId : 0
+[05/21/2013 12:18:19,213][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 12:18:19,213][DEBUG]: - CountryRegionCode : 
+[05/21/2013 12:18:19,214][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 12:18:19,215][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 12:18:19,215][DEBUG]: - TerritoryId : 0
+[05/21/2013 12:18:19,215][DEBUG]: - Rowguid : 771215f9-fd01-46e7-a421-f24c94bf33d7
+[05/21/2013 12:18:19,215][DEBUG]: - ModifiedDate : 05/21/2013 12:18:19
+[05/21/2013 12:18:19,215][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:19,215][DEBUG]: - TerritoryId : 0
+[05/21/2013 12:18:19,215][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 12:18:19,216][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:18:19,216][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 12:18:19,216][DEBUG]: - SalesYtd : 100
+[05/21/2013 12:18:19,216][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 12:18:19,216][DEBUG]: - CostYtd : 111
+[05/21/2013 12:18:19,217][DEBUG]: - CostLastYear : 222
+[05/21/2013 12:18:19,217][DEBUG]: - Rowguid : a19ef13d-4ad7-4e62-b15f-48de2d13181d
+[05/21/2013 12:18:19,217][DEBUG]: - ModifiedDate : 05/21/2013 12:18:19
+[05/21/2013 12:18:19,217][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:19,217][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:18:19,217][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 12:18:19,218][DEBUG]: - ModifiedDate : 05/21/2013 12:18:19
+[05/21/2013 12:18:20,437][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:20,437][DEBUG]: - StateProvinceId : 194
+[05/21/2013 12:18:20,437][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:20,437][DEBUG]: - TerritoryId : 23
+[05/21/2013 12:18:20,437][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:20,437][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:18:24,152][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,152][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:24,152][DEBUG]: - Name : Test Department1
+[05/21/2013 12:18:24,152][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:24,152][DEBUG]: - ModifiedDate : 05/21/2013 12:18:24
+[05/21/2013 12:18:24,164][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,164][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:24,164][DEBUG]: - Name : Test Department2
+[05/21/2013 12:18:24,164][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:24,164][DEBUG]: - ModifiedDate : 05/21/2013 12:18:24
+[05/21/2013 12:18:24,201][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,201][DEBUG]: - DepartmentId : 91
+[05/21/2013 12:18:24,213][DEBUG]:Deleting a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,213][DEBUG]: - DepartmentId : 92
+[05/21/2013 12:18:24,218][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,218][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:24,218][DEBUG]: - Name : Test Department1
+[05/21/2013 12:18:24,218][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:24,218][DEBUG]: - ModifiedDate : 05/21/2013 12:18:24
+[05/21/2013 12:18:24,241][DEBUG]:Adding a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:18:24,241][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:18:24,241][DEBUG]: - Name : Test Department2
+[05/21/2013 12:18:24,241][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:18:24,241][DEBUG]: - ModifiedDate : 05/21/2013 12:18:24
+[05/21/2013 12:18:24,266][DEBUG]:Modifying a System.Data.Entity.Infrastructure.DbEntityEntry
+[05/21/2013 12:59:20,068][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,085][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,085][DEBUG]: - Name : Test Department1
+[05/21/2013 12:59:20,085][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,086][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,357][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,357][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,357][DEBUG]: - Name : Test Department2
+[05/21/2013 12:59:20,357][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,357][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,375][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,376][DEBUG]: - DepartmentId : 107
+[05/21/2013 12:59:20,386][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,386][DEBUG]: - DepartmentId : 108
+[05/21/2013 12:59:20,413][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 12:59:20,413][DEBUG]: - StateProvinceId : 0
+[05/21/2013 12:59:20,414][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 12:59:20,414][DEBUG]: - CountryRegionCode : 
+[05/21/2013 12:59:20,414][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 12:59:20,414][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 12:59:20,414][DEBUG]: - TerritoryId : 0
+[05/21/2013 12:59:20,414][DEBUG]: - Rowguid : 95388230-d967-4574-b6ab-3d74a535b1ee
+[05/21/2013 12:59:20,414][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,415][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 12:59:20,415][DEBUG]: - TerritoryId : 0
+[05/21/2013 12:59:20,415][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 12:59:20,415][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:59:20,415][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 12:59:20,416][DEBUG]: - SalesYtd : 100
+[05/21/2013 12:59:20,416][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 12:59:20,416][DEBUG]: - CostYtd : 111
+[05/21/2013 12:59:20,416][DEBUG]: - CostLastYear : 222
+[05/21/2013 12:59:20,417][DEBUG]: - Rowguid : ec5e9567-7575-49e3-9ec0-403a160e217e
+[05/21/2013 12:59:20,417][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,417][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 12:59:20,417][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:59:20,418][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 12:59:20,418][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,472][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 12:59:20,472][DEBUG]: - StateProvinceId : 197
+[05/21/2013 12:59:20,472][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 12:59:20,472][DEBUG]: - TerritoryId : 26
+[05/21/2013 12:59:20,472][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 12:59:20,472][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 12:59:20,489][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,489][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,489][DEBUG]: - Name : Test Department1
+[05/21/2013 12:59:20,489][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,489][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,490][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,490][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,490][DEBUG]: - Name : Test Department2
+[05/21/2013 12:59:20,490][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,490][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,493][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,493][DEBUG]: - DepartmentId : 109
+[05/21/2013 12:59:20,495][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,495][DEBUG]: - DepartmentId : 110
+[05/21/2013 12:59:20,499][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,499][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,499][DEBUG]: - Name : Test Department1
+[05/21/2013 12:59:20,499][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,499][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,500][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:20,500][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:20,500][DEBUG]: - Name : Test Department2
+[05/21/2013 12:59:20,500][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:20,500][DEBUG]: - ModifiedDate : 05/21/2013 12:59:20
+[05/21/2013 12:59:20,505][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:47,417][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:47,425][DEBUG]: - DepartmentId : 111
+[05/21/2013 12:59:47,653][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:47,653][DEBUG]: - DepartmentId : 112
+[05/21/2013 12:59:47,741][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:47,743][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:47,743][DEBUG]: - Name : Test Department1
+[05/21/2013 12:59:47,743][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:47,743][DEBUG]: - ModifiedDate : 05/21/2013 12:59:47
+[05/21/2013 12:59:47,835][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 12:59:47,835][DEBUG]: - DepartmentId : 0
+[05/21/2013 12:59:47,835][DEBUG]: - Name : Test Department2
+[05/21/2013 12:59:47,835][DEBUG]: - GroupName : Test Group
+[05/21/2013 12:59:47,835][DEBUG]: - ModifiedDate : 05/21/2013 12:59:47
+[05/21/2013 12:59:47,849][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:00:24,593][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:00:24,600][DEBUG]: - DepartmentId : 113
+[05/21/2013 13:00:24,820][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:00:24,820][DEBUG]: - DepartmentId : 114
+[05/21/2013 13:00:24,872][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:00:24,874][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:00:24,874][DEBUG]: - Name : Test Department1
+[05/21/2013 13:00:24,874][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:00:24,874][DEBUG]: - ModifiedDate : 05/21/2013 13:00:24
+[05/21/2013 13:00:24,923][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:00:24,923][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:00:24,924][DEBUG]: - Name : Test Department2
+[05/21/2013 13:00:24,924][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:00:24,924][DEBUG]: - ModifiedDate : 05/21/2013 13:00:24
+[05/21/2013 13:01:24,624][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:41,897][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:41,906][DEBUG]: - DepartmentId : 115
+[05/21/2013 13:07:42,174][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,174][DEBUG]: - DepartmentId : 116
+[05/21/2013 13:07:42,214][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,215][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,215][DEBUG]: - Name : Test Department1
+[05/21/2013 13:07:42,215][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,215][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,276][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,276][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,276][DEBUG]: - Name : Test Department2
+[05/21/2013 13:07:42,276][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,276][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,293][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,293][DEBUG]: - DepartmentId : 117
+[05/21/2013 13:07:42,294][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,294][DEBUG]: - DepartmentId : 118
+[05/21/2013 13:07:42,320][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:07:42,320][DEBUG]: - StateProvinceId : 0
+[05/21/2013 13:07:42,320][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 13:07:42,320][DEBUG]: - CountryRegionCode : 
+[05/21/2013 13:07:42,320][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 13:07:42,320][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 13:07:42,321][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:07:42,321][DEBUG]: - Rowguid : b81008c3-2e6e-4a09-8ed0-126754702c28
+[05/21/2013 13:07:42,321][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,321][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:07:42,321][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:07:42,321][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 13:07:42,322][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:07:42,322][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 13:07:42,322][DEBUG]: - SalesYtd : 100
+[05/21/2013 13:07:42,322][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 13:07:42,322][DEBUG]: - CostYtd : 111
+[05/21/2013 13:07:42,323][DEBUG]: - CostLastYear : 222
+[05/21/2013 13:07:42,323][DEBUG]: - Rowguid : be04a67b-0ca1-435a-af20-9f93775bce1e
+[05/21/2013 13:07:42,323][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,323][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:07:42,323][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:07:42,323][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 13:07:42,324][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,502][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:07:42,502][DEBUG]: - StateProvinceId : 198
+[05/21/2013 13:07:42,502][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:07:42,502][DEBUG]: - TerritoryId : 27
+[05/21/2013 13:07:42,503][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:07:42,503][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:07:42,711][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,711][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,711][DEBUG]: - Name : Test Department1
+[05/21/2013 13:07:42,711][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,711][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,722][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,722][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,722][DEBUG]: - Name : Test Department2
+[05/21/2013 13:07:42,722][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,722][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,726][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,726][DEBUG]: - DepartmentId : 119
+[05/21/2013 13:07:42,745][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,745][DEBUG]: - DepartmentId : 120
+[05/21/2013 13:07:42,750][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,751][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,751][DEBUG]: - Name : Test Department1
+[05/21/2013 13:07:42,751][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,751][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,753][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,753][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:07:42,753][DEBUG]: - Name : Test Department2
+[05/21/2013 13:07:42,753][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,753][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,759][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,762][DEBUG]: - DepartmentId : 121
+[05/21/2013 13:07:42,762][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:07:42,762][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:07:42,762][DEBUG]: - ModifiedDate : 05/21/2013 13:07:42
+[05/21/2013 13:07:42,771][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,772][DEBUG]: - DepartmentId : 121
+[05/21/2013 13:07:42,773][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:07:42,773][DEBUG]: - DepartmentId : 122
+[05/21/2013 13:08:09,360][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:08:09,373][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:08:09,373][DEBUG]: - Name : Test Department1
+[05/21/2013 13:08:09,373][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:08:09,373][DEBUG]: - ModifiedDate : 05/21/2013 13:08:09
+[05/21/2013 13:08:09,685][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:08:09,685][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:08:09,685][DEBUG]: - Name : Test Department2
+[05/21/2013 13:08:09,685][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:08:09,685][DEBUG]: - ModifiedDate : 05/21/2013 13:08:09
+[05/21/2013 13:08:09,706][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:10:30,118][DEBUG]: - DepartmentId : 123
+[05/21/2013 13:10:33,681][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:10:35,931][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:10:38,843][DEBUG]: - ModifiedDate : 05/21/2013 13:08:09
+[05/21/2013 13:10:38,878][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:10:39,620][DEBUG]: - DepartmentId : 123
+[05/21/2013 13:10:39,632][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:10:40,421][DEBUG]: - DepartmentId : 124
+[05/21/2013 13:18:59,626][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:18:59,655][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:18:59,655][DEBUG]: - Name : Test Department1
+[05/21/2013 13:18:59,655][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:18:59,656][DEBUG]: - ModifiedDate : 05/21/2013 13:18:59
+[05/21/2013 13:19:00,002][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:19:00,002][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:19:00,002][DEBUG]: - Name : Test Department2
+[05/21/2013 13:19:00,002][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:19:00,002][DEBUG]: - ModifiedDate : 05/21/2013 13:18:59
+[05/21/2013 13:19:09,265][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:19:45,068][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:19:47,825][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:19:48,545][DEBUG]: - DepartmentId : 125
+[05/21/2013 13:19:48,554][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:03,654][DEBUG]: - DepartmentId : 126
+[05/21/2013 13:20:24,253][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,260][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,260][DEBUG]: - Name : Test Department1
+[05/21/2013 13:20:24,261][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,261][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,509][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,509][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,509][DEBUG]: - Name : Test Department2
+[05/21/2013 13:20:24,509][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,509][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,529][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,530][DEBUG]: - DepartmentId : 127
+[05/21/2013 13:20:24,539][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,539][DEBUG]: - DepartmentId : 128
+[05/21/2013 13:20:24,565][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:20:24,566][DEBUG]: - StateProvinceId : 0
+[05/21/2013 13:20:24,566][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 13:20:24,566][DEBUG]: - CountryRegionCode : 
+[05/21/2013 13:20:24,566][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 13:20:24,566][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 13:20:24,566][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:20:24,567][DEBUG]: - Rowguid : dce3d881-9e69-40e3-b5ed-e4e3efabf9b6
+[05/21/2013 13:20:24,567][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,567][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:20:24,570][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:20:24,570][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 13:20:24,570][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:20:24,570][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 13:20:24,571][DEBUG]: - SalesYtd : 100
+[05/21/2013 13:20:24,571][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 13:20:24,571][DEBUG]: - CostYtd : 111
+[05/21/2013 13:20:24,571][DEBUG]: - CostLastYear : 222
+[05/21/2013 13:20:24,572][DEBUG]: - Rowguid : 1b68259d-60c7-41cb-ad95-94ac8c44ef69
+[05/21/2013 13:20:24,572][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,572][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:20:24,572][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:20:24,572][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 13:20:24,572][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,761][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:20:24,761][DEBUG]: - StateProvinceId : 199
+[05/21/2013 13:20:24,761][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:20:24,761][DEBUG]: - TerritoryId : 28
+[05/21/2013 13:20:24,761][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:20:24,761][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:20:24,970][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,970][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,970][DEBUG]: - Name : Test Department1
+[05/21/2013 13:20:24,970][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,970][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,973][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,973][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,973][DEBUG]: - Name : Test Department2
+[05/21/2013 13:20:24,973][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,973][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,977][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,977][DEBUG]: - DepartmentId : 129
+[05/21/2013 13:20:24,979][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,979][DEBUG]: - DepartmentId : 130
+[05/21/2013 13:20:24,982][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,982][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,982][DEBUG]: - Name : Test Department1
+[05/21/2013 13:20:24,982][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,982][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,985][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,985][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:20:24,985][DEBUG]: - Name : Test Department2
+[05/21/2013 13:20:24,985][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:20:24,985][DEBUG]: - ModifiedDate : 05/21/2013 13:20:24
+[05/21/2013 13:20:24,987][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,990][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:20:24,996][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,996][DEBUG]: - DepartmentId : 131
+[05/21/2013 13:20:24,997][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:20:24,997][DEBUG]: - DepartmentId : 132
+[05/21/2013 13:23:48,615][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:23:48,629][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:23:48,629][DEBUG]: - Name : Test Department1
+[05/21/2013 13:23:48,629][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:23:48,629][DEBUG]: - ModifiedDate : 05/21/2013 13:23:48
+[05/21/2013 13:23:48,964][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:23:48,964][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:23:48,964][DEBUG]: - Name : Test Department2
+[05/21/2013 13:23:48,964][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:23:48,964][DEBUG]: - ModifiedDate : 05/21/2013 13:23:48
+[05/21/2013 13:23:48,996][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:25:16,570][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:25:16,592][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:26:12,961][DEBUG]: - DepartmentId : 133
+[05/21/2013 13:26:12,979][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:26:35,303][DEBUG]: - DepartmentId : 134
+[05/21/2013 13:28:43,239][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:28:54,872][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:28:57,453][DEBUG]: - Name : Test Department1
+[05/21/2013 13:28:59,434][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:29:02,349][DEBUG]: - ModifiedDate : 05/21/2013 13:28:15
+[05/21/2013 13:29:20,566][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:29:20,773][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:29:20,773][DEBUG]: - Name : Test Department2
+[05/21/2013 13:29:20,773][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:29:20,773][DEBUG]: - ModifiedDate : 05/21/2013 13:28:15
+[05/21/2013 13:30:10,329][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:30:49,386][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:30:50,135][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:30:50,753][DEBUG]: - DepartmentId : 135
+[05/21/2013 13:30:51,286][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:30:52,477][DEBUG]: - DepartmentId : 136
+[05/21/2013 13:31:57,000][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:31:57,016][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:31:57,017][DEBUG]: - Name : Test Department1
+[05/21/2013 13:31:57,017][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:31:57,017][DEBUG]: - ModifiedDate : 05/21/2013 13:31:48
+[05/21/2013 13:31:59,018][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:31:59,018][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:31:59,018][DEBUG]: - Name : Test Department2
+[05/21/2013 13:31:59,018][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:31:59,018][DEBUG]: - ModifiedDate : 05/21/2013 13:31:48
+[05/21/2013 13:32:02,428][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:19,318][DEBUG]: - DepartmentId : 137
+[05/21/2013 13:32:19,321][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:32:20,344][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:23,514][DEBUG]: - DepartmentId : 137
+[05/21/2013 13:32:24,058][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:32,909][DEBUG]: - DepartmentId : 138
+[05/21/2013 13:32:57,864][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:57,873][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:57,873][DEBUG]: - Name : Test Department1
+[05/21/2013 13:32:57,873][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:57,874][DEBUG]: - ModifiedDate : 05/21/2013 13:32:57
+[05/21/2013 13:32:58,162][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,162][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:58,162][DEBUG]: - Name : Test Department2
+[05/21/2013 13:32:58,162][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:58,162][DEBUG]: - ModifiedDate : 05/21/2013 13:32:57
+[05/21/2013 13:32:58,209][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,211][DEBUG]: - DepartmentId : 139
+[05/21/2013 13:32:58,219][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,219][DEBUG]: - DepartmentId : 140
+[05/21/2013 13:32:58,251][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:32:58,253][DEBUG]: - StateProvinceId : 0
+[05/21/2013 13:32:58,253][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 13:32:58,253][DEBUG]: - CountryRegionCode : 
+[05/21/2013 13:32:58,253][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 13:32:58,253][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 13:32:58,253][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:32:58,253][DEBUG]: - Rowguid : 8af1f291-0cfd-4447-8da5-4343d82fde2c
+[05/21/2013 13:32:58,254][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,254][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:32:58,254][DEBUG]: - TerritoryId : 0
+[05/21/2013 13:32:58,254][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 13:32:58,254][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:32:58,254][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 13:32:58,255][DEBUG]: - SalesYtd : 100
+[05/21/2013 13:32:58,255][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 13:32:58,255][DEBUG]: - CostYtd : 111
+[05/21/2013 13:32:58,255][DEBUG]: - CostLastYear : 222
+[05/21/2013 13:32:58,255][DEBUG]: - Rowguid : de9e26d5-61e7-41a7-9884-921acd2d477b
+[05/21/2013 13:32:58,256][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,256][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:32:58,256][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:32:58,256][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 13:32:58,256][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,421][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 13:32:58,421][DEBUG]: - StateProvinceId : 200
+[05/21/2013 13:32:58,421][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 13:32:58,421][DEBUG]: - TerritoryId : 29
+[05/21/2013 13:32:58,422][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 13:32:58,422][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 13:32:58,711][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,711][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:58,711][DEBUG]: - Name : Test Department1
+[05/21/2013 13:32:58,712][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:58,712][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,714][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,714][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:58,714][DEBUG]: - Name : Test Department2
+[05/21/2013 13:32:58,714][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:58,714][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,720][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,720][DEBUG]: - DepartmentId : 141
+[05/21/2013 13:32:58,724][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,724][DEBUG]: - DepartmentId : 142
+[05/21/2013 13:32:58,728][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,728][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:58,728][DEBUG]: - Name : Test Department1
+[05/21/2013 13:32:58,728][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:58,728][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,737][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,737][DEBUG]: - DepartmentId : 0
+[05/21/2013 13:32:58,737][DEBUG]: - Name : Test Department2
+[05/21/2013 13:32:58,737][DEBUG]: - GroupName : Test Group
+[05/21/2013 13:32:58,737][DEBUG]: - ModifiedDate : 05/21/2013 13:32:58
+[05/21/2013 13:32:58,746][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,746][DEBUG]: - DepartmentId : 143
+[05/21/2013 13:32:58,749][DEBUG]: - Name : Test Department 3
+[05/21/2013 13:32:58,757][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,757][DEBUG]: - DepartmentId : 143
+[05/21/2013 13:32:58,758][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 13:32:58,758][DEBUG]: - DepartmentId : 144
+[05/21/2013 14:11:31,866][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:31,917][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:31,917][DEBUG]: - Name : Test Department1
+[05/21/2013 14:11:31,917][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:31,918][DEBUG]: - ModifiedDate : 05/21/2013 14:11:31
+[05/21/2013 14:11:32,755][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:32,755][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:32,755][DEBUG]: - Name : Test Department2
+[05/21/2013 14:11:32,755][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:32,755][DEBUG]: - ModifiedDate : 05/21/2013 14:11:31
+[05/21/2013 14:11:32,848][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:32,849][DEBUG]: - DepartmentId : 145
+[05/21/2013 14:11:32,944][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:32,944][DEBUG]: - DepartmentId : 146
+[05/21/2013 14:11:32,969][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 14:11:32,969][DEBUG]: - StateProvinceId : 0
+[05/21/2013 14:11:32,969][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 14:11:32,969][DEBUG]: - CountryRegionCode : 
+[05/21/2013 14:11:32,970][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 14:11:32,970][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 14:11:32,970][DEBUG]: - TerritoryId : 0
+[05/21/2013 14:11:32,970][DEBUG]: - Rowguid : 00939ee5-73e5-484d-a5da-d4440a278adb
+[05/21/2013 14:11:32,970][DEBUG]: - ModifiedDate : 05/21/2013 14:11:32
+[05/21/2013 14:11:32,970][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 14:11:32,971][DEBUG]: - TerritoryId : 0
+[05/21/2013 14:11:32,971][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 14:11:32,971][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:11:32,971][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 14:11:32,971][DEBUG]: - SalesYtd : 100
+[05/21/2013 14:11:32,971][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 14:11:32,972][DEBUG]: - CostYtd : 111
+[05/21/2013 14:11:32,972][DEBUG]: - CostLastYear : 222
+[05/21/2013 14:11:32,972][DEBUG]: - Rowguid : 9a334842-37a7-403f-aace-0de957667b8c
+[05/21/2013 14:11:32,972][DEBUG]: - ModifiedDate : 05/21/2013 14:11:32
+[05/21/2013 14:11:32,972][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 14:11:32,973][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:11:32,973][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 14:11:32,973][DEBUG]: - ModifiedDate : 05/21/2013 14:11:32
+[05/21/2013 14:11:33,868][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 14:11:33,868][DEBUG]: - StateProvinceId : 201
+[05/21/2013 14:11:33,868][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 14:11:33,868][DEBUG]: - TerritoryId : 30
+[05/21/2013 14:11:33,868][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 14:11:33,868][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:11:35,104][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,104][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:35,104][DEBUG]: - Name : Test Department1
+[05/21/2013 14:11:35,104][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:35,104][DEBUG]: - ModifiedDate : 05/21/2013 14:11:35
+[05/21/2013 14:11:35,110][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,110][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:35,110][DEBUG]: - Name : Test Department2
+[05/21/2013 14:11:35,110][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:35,110][DEBUG]: - ModifiedDate : 05/21/2013 14:11:35
+[05/21/2013 14:11:35,135][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,135][DEBUG]: - DepartmentId : 147
+[05/21/2013 14:11:35,139][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,139][DEBUG]: - DepartmentId : 148
+[05/21/2013 14:11:35,146][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,146][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:35,146][DEBUG]: - Name : Test Department1
+[05/21/2013 14:11:35,146][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:35,146][DEBUG]: - ModifiedDate : 05/21/2013 14:11:35
+[05/21/2013 14:11:35,149][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,149][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:11:35,149][DEBUG]: - Name : Test Department2
+[05/21/2013 14:11:35,149][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:11:35,149][DEBUG]: - ModifiedDate : 05/21/2013 14:11:35
+[05/21/2013 14:11:35,151][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,152][DEBUG]: - DepartmentId : 149
+[05/21/2013 14:11:35,154][DEBUG]: - Name : Test Department 3
+[05/21/2013 14:11:35,262][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,262][DEBUG]: - DepartmentId : 149
+[05/21/2013 14:11:35,264][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:11:35,265][DEBUG]: - DepartmentId : 150
+[05/21/2013 14:22:19,406][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,414][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,415][DEBUG]: - Name : Test Department1
+[05/21/2013 14:22:19,415][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,415][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,699][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,699][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,699][DEBUG]: - Name : Test Department2
+[05/21/2013 14:22:19,699][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,699][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,718][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,720][DEBUG]: - DepartmentId : 151
+[05/21/2013 14:22:19,729][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,729][DEBUG]: - DepartmentId : 152
+[05/21/2013 14:22:19,771][DEBUG]:Adding a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 14:22:19,771][DEBUG]: - StateProvinceId : 0
+[05/21/2013 14:22:19,771][DEBUG]: - StateProvinceCode : XXX
+[05/21/2013 14:22:19,771][DEBUG]: - CountryRegionCode : 
+[05/21/2013 14:22:19,772][DEBUG]: - IsOnlyStateProvinceFlag : False
+[05/21/2013 14:22:19,772][DEBUG]: - Name : TEST_STATE_PROVINCE
+[05/21/2013 14:22:19,772][DEBUG]: - TerritoryId : 0
+[05/21/2013 14:22:19,772][DEBUG]: - Rowguid : a664d903-59d7-4d53-86be-3ee828cdf38a
+[05/21/2013 14:22:19,772][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,772][DEBUG]:Adding a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 14:22:19,773][DEBUG]: - TerritoryId : 0
+[05/21/2013 14:22:19,773][DEBUG]: - Name : TEST_TERRITORY
+[05/21/2013 14:22:19,773][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:22:19,773][DEBUG]: - Group : TEST_GROUP
+[05/21/2013 14:22:19,773][DEBUG]: - SalesYtd : 100
+[05/21/2013 14:22:19,774][DEBUG]: - SalesLastYear : 0.00
+[05/21/2013 14:22:19,774][DEBUG]: - CostYtd : 111
+[05/21/2013 14:22:19,774][DEBUG]: - CostLastYear : 222
+[05/21/2013 14:22:19,774][DEBUG]: - Rowguid : c5b5e266-e9df-4e18-a7b1-304fa6f7cd23
+[05/21/2013 14:22:19,774][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,774][DEBUG]:Adding a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 14:22:19,775][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:22:19,775][DEBUG]: - Name : TEST_CONTRY_REGION
+[05/21/2013 14:22:19,775][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,836][DEBUG]:Deleting a AdventureWorks.Model.Person.StateProvince
+[05/21/2013 14:22:19,836][DEBUG]: - StateProvinceId : 202
+[05/21/2013 14:22:19,836][DEBUG]:Deleting a AdventureWorks.Model.Sales.SalesTerritory
+[05/21/2013 14:22:19,836][DEBUG]: - TerritoryId : 31
+[05/21/2013 14:22:19,836][DEBUG]:Deleting a AdventureWorks.Model.Person.CountryRegion
+[05/21/2013 14:22:19,836][DEBUG]: - CountryRegionCode : XXX
+[05/21/2013 14:22:19,888][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,888][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,888][DEBUG]: - Name : Test Department1
+[05/21/2013 14:22:19,888][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,888][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,889][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,890][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,890][DEBUG]: - Name : Test Department2
+[05/21/2013 14:22:19,890][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,890][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,893][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,893][DEBUG]: - DepartmentId : 153
+[05/21/2013 14:22:19,895][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,895][DEBUG]: - DepartmentId : 154
+[05/21/2013 14:22:19,897][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,897][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,897][DEBUG]: - Name : Test Department1
+[05/21/2013 14:22:19,897][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,897][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,899][DEBUG]:Adding a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,899][DEBUG]: - DepartmentId : 0
+[05/21/2013 14:22:19,899][DEBUG]: - Name : Test Department2
+[05/21/2013 14:22:19,899][DEBUG]: - GroupName : Test Group
+[05/21/2013 14:22:19,899][DEBUG]: - ModifiedDate : 05/21/2013 14:22:19
+[05/21/2013 14:22:19,905][DEBUG]:Modifying a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,905][DEBUG]: - DepartmentId : 155
+[05/21/2013 14:22:19,908][DEBUG]: - Name : Test Department 3
+[05/21/2013 14:22:19,916][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,916][DEBUG]: - DepartmentId : 155
+[05/21/2013 14:22:19,931][DEBUG]:Deleting a AdventureWorks.Model.HumanResources.Department
+[05/21/2013 14:22:19,931][DEBUG]: - DepartmentId : 156
