@@ -1,8 +1,6 @@
-
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using AdventureWorks.DataAccess;
 using AdventureWorks.DataAccess.Configurations;
 using AdventureWorks.DataAccess.Configurations.HumanResources;
 using AdventureWorks.DataAccess.Configurations.Person;
@@ -11,13 +9,8 @@ using AdventureWorks.DataAccess.Configurations.Purchasing;
 using AdventureWorks.DataAccess.Configurations.Sales;
 using AdventureWorks.Infrastructure;
 using AdventureWorks.Model;
-using AdventureWorks.Model.HumanResources;
-using AdventureWorks.Model.Person;
-using AdventureWorks.Model.Production;
-using AdventureWorks.Model.Purchasing;
-using AdventureWorks.Model.Sales;
 
-namespace AdventureWorks.IntegrationTest
+namespace AdventureWorks.DataAccess
 {
     public class AdventureWorksContext : DbContext
     {
