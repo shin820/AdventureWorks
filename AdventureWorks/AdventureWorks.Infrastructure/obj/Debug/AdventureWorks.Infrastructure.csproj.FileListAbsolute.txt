@@ -1,6 +1,0 @@
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\bin\Debug\AdventureWorks.Infrastructure.dll
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\bin\Debug\AdventureWorks.Infrastructure.pdb
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\bin\Debug\log4net.dll
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\obj\Debug\AdventureWorks.Infrastructure.csprojResolveAssemblyReference.cache
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\obj\Debug\AdventureWorks.Infrastructure.dll
-E:\AdventureWorks\AdventureWorks\AdventureWorks\AdventureWorks.Infrastructure\obj\Debug\AdventureWorks.Infrastructure.pdb
