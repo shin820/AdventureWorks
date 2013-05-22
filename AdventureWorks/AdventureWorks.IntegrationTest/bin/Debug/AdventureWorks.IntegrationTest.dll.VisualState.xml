@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1017]D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\AdventureWorks.IntegrationTest.dll</TopNode>
+  <SelectedNode>[0-1017]D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\AdventureWorks.IntegrationTest.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1017]D:\GitRepository\AdventureWorks\AdventureWorks\AdventureWorks.IntegrationTest\bin\Debug\AdventureWorks.IntegrationTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1018]AdventureWorks" Expanded="true" />
+    <Node UniqueName="[0-1019]AdventureWorks.IntegrationTest" Expanded="true" />
+    <Node UniqueName="[0-1000]AdventureWorks.IntegrationTest.AdventureWorksContextTest" Expanded="true" />
+    <Node UniqueName="[0-1003]AdventureWorks.IntegrationTest.EmployeeConfigurationTest" Expanded="true" />
+    <Node UniqueName="[0-1020]AdventureWorks.IntegrationTest.Repositories" Expanded="true" />
+    <Node UniqueName="[0-1008]AdventureWorks.IntegrationTest.Repositories.DepartmentRepositoryTest" Expanded="true" />
+    <Node UniqueName="[0-1012]AdventureWorks.IntegrationTest.RepositoryTest" Expanded="true" />
+  </Nodes>
+</VisualState>

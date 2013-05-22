@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdventureWorks.Model
 {
-    public abstract class ObjectWithState
+    public class ObjectWithState
     {
         [NotMapped]
         public State State { get; set; }

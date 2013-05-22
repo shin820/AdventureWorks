@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdventureWorksContext.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Configurations\AwBuildVersionConfiguration.cs" />
     <Compile Include="Configurations\DatabaseLogConfiguration.cs" />
     <Compile Include="Configurations\ErrorLogConfiguration.cs" />
@@ -120,6 +121,9 @@
     <Compile Include="Configurations\Sales\Sales_StoreConfiguration.cs" />
     <Compile Include="Configurations\Sales\Sales_StoreContactConfiguration.cs" />
     <Compile Include="Configurations\Sales\Sales_WebSiteHitsConfiguration.cs" />
+    <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Interfaces\IDepartmentRepository.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,6 +145,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
