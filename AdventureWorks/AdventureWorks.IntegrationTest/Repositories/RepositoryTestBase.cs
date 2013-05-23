@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using AdventureWorks.DataAccess;
+using AdventureWorks.DataAccess.Repositories.Interfaces;
 using AdventureWorks.Model.HumanResources;
 using NUnit.Framework;
 
@@ -9,19 +10,19 @@ namespace AdventureWorks.IntegrationTest.Repositories
 {
     public abstract class RepositoryTestBase<TEntity> where TEntity : class
     {
-        protected AdventureWorksContext context;
+        protected AdventureWorksContext Context;
         
         [TestFixtureSetUp]
         public void BaseTestFixtureSetUp()
         {
-            context = new AdventureWorksContext("AdventureWorks");
+            Context = new AdventureWorksContext("AdventureWorks");
         }
 
         [TestFixtureTearDown]
         public void BaseTestFixtureTearDown()
         {
             DeleteTestEntities();
-            context.Dispose();
+            Context.Dispose();
         }
 
         [Test]
@@ -63,7 +64,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
             Assert.IsNull(afterDelete);
         }
 
-        protected abstract IBaseRepository<TEntity> GetRepository();
+        protected abstract IRepository<TEntity> GetRepository();
         protected abstract Expression<Func<TEntity, bool>> IdentifyTestEntityExpression();
         protected abstract TEntity MakeTestEntity();
         protected abstract void AssertEntitiesAreEqual(TEntity expected, TEntity actual);
@@ -71,7 +72,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
 
         private TEntity GetTestEntity()
         {
-            return GetRepository().GetAll().Where(IdentifyTestEntityExpression()).FirstOrDefault();
+            return GetRepository().FindAll().Where(IdentifyTestEntityExpression()).FirstOrDefault();
         }
 
         private void AddTestDepartments()
@@ -84,7 +85,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
 
         private void DeleteTestEntities()
         {
-            var testDepartments = from d in GetRepository().GetAll().Where(IdentifyTestEntityExpression()) select d;
+            var testDepartments = from d in GetRepository().FindAll().Where(IdentifyTestEntityExpression()) select d;
             Enumerable.ToList<TEntity>(testDepartments).ForEach(d => GetRepository().Delete(d));
 
             GetRepository().SaveChanges();

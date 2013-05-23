@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventureWorks.DataAccess;
 using AdventureWorks.DataAccess.Repositories;
-using AdventureWorks.DataAccess.Interfaces;
+using AdventureWorks.DataAccess.Repositories.Interfaces;
 using AdventureWorks.Model.HumanResources;
 using NUnit.Framework;
 using System.Linq.Expressions;
@@ -20,10 +20,10 @@ namespace AdventureWorks.IntegrationTest.Repositories
         [TestFixtureSetUp]
         public void TestFixtureSetUp()
         {
-            repository = new DepartmentRepository(context);
+            repository = new DepartmentRepository(new UnitOfWork(Context));
         }
 
-        protected override IBaseRepository<Department> GetRepository()
+        protected override IRepository<Department> GetRepository()
         {
             return repository;
         }

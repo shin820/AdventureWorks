@@ -14,7 +14,7 @@ using AdventureWorks.Model;
 
 namespace AdventureWorks.DataAccess
 {
-    public class AdventureWorksContext : DbContext
+    public class AdventureWorksContext : DbContext,IDbContext
     {
         //public IDbSet<AwBuildVersion> AwBuildVersion { get; set; } // AWBuildVersion
         //public IDbSet<DatabaseLog> DatabaseLog { get; set; } // DatabaseLog
@@ -223,10 +223,20 @@ namespace AdventureWorks.DataAccess
             modelBuilder.Configurations.Add(new Sales_WebSiteHitsConfiguration());
         }
 
+        public IQueryable<T> FindAll<T>() where T : class
+        {
+            return this.Set<T>();
+        }
+
         public override int SaveChanges()
         {
             LogChanges();
             return base.SaveChanges();
+        }
+
+        public void Rollback()
+        {
+            this.ChangeTracker.Entries().ToList().ForEach(e => e.Reload());
         }
 
         private void LogChanges()

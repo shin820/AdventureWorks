@@ -1,55 +1,76 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using AdventureWorks.Model;
+using System.Linq;
 using System.Linq.Expressions;
+using AdventureWorks.DataAccess.Repositories.Interfaces;
+using AdventureWorks.Model;
 
-namespace AdventureWorks.DataAccess
+namespace AdventureWorks.DataAccess.Repositories
 {
-    public class Repository : IRepository
+    public abstract class Repository<TEntity> : IRepository<TEntity>
+        where TEntity : class
     {
-        private readonly DbContext _dbContext;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public Repository(DbContext dbContext)
+        protected IDbContext DbContext
         {
-            _dbContext = dbContext;
+            get { return _unitOfWork.Context; }
         }
 
-        public IQueryable<T> Find<T>(Expression<Func<T, bool>> filter) where T : class
+        protected Repository(IUnitOfWork unitOfWork)
         {
-            return _dbContext.Set<T>().Where(filter);
+            _unitOfWork = unitOfWork;
         }
 
-        public T Update<T>(T entity) where T : class
+        public void Add(TEntity entity)
         {
-            _dbContext.SaveChanges();
-            return entity;
+            _unitOfWork.RegisterNew(entity);
         }
 
-        public T Add<T>(T entity) where T : class
+        public void Delete(TEntity entity)
         {
-            _dbContext.Set<T>().Add(entity);
-            _dbContext.SaveChanges();
-            return entity;
+            _unitOfWork.RegisterDeleted(entity);
         }
 
-        public void Delete<T>(T entity) where T : class
+        public IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> filter)
         {
-            _dbContext.Set<T>().Remove(entity);
-            _dbContext.SaveChanges();
+            return DbContext.Set<TEntity>().Where(filter);
         }
+
+        public IQueryable<TEntity> FindAll()
+        {
+            return DbContext.FindAll<TEntity>();
+        }
+
+        public void SaveChanges()
+        {
+            try
+            {
+                _unitOfWork.Commit();
+            }
+            catch (Exception)
+            {
+                _unitOfWork.Refresh();
+                throw;
+            }
+        }
+
+        public void RollbackChanges()
+        {
+            _unitOfWork.Refresh();
+        }
+
+        #region Save for disconnected enetity
 
         public void SaveChanges<T>(T root) where T : ObjectWithState
         {
-            _dbContext.Set<T>().Add(root);
+            _unitOfWork.RegisterNew(root);
 
             CheckForEntitiesWithoutStateInterface();
 
-            foreach (var entry in _dbContext.ChangeTracker.Entries<ObjectWithState>())
+            foreach (var entry in DbContext.ChangeTracker.Entries<ObjectWithState>())
             {
                 ObjectWithState stateInfo = entry.Entity;
                 entry.State = ConvertState(stateInfo.State);
@@ -60,12 +81,12 @@ namespace AdventureWorks.DataAccess
                 }
             }
 
-            _dbContext.SaveChanges();
+            _unitOfWork.Commit();
         }
 
         private void CheckForEntitiesWithoutStateInterface()
         {
-            var entitiesWithoutStateInterface = from e in _dbContext.ChangeTracker.Entries()
+            var entitiesWithoutStateInterface = from e in DbContext.ChangeTracker.Entries()
                                                 where !(e.Entity is ObjectWithState)
                                                 select e;
 
@@ -82,7 +103,7 @@ namespace AdventureWorks.DataAccess
                 var complexTypeProperty = originalValue.Value as IDictionary<string, object>;
                 if (complexTypeProperty != null)
                 {
-                    ApplyPropertyChnages((DbPropertyValues) values[originalValue.Key], complexTypeProperty);
+                    ApplyPropertyChnages((DbPropertyValues)values[originalValue.Key], complexTypeProperty);
                 }
                 else
                 {
@@ -103,5 +124,7 @@ namespace AdventureWorks.DataAccess
                     return EntityState.Unchanged;
             }
         }
+
+        #endregion
     }
 }
