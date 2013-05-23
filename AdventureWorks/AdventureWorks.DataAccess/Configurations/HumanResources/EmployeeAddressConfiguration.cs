@@ -17,8 +17,8 @@ namespace AdventureWorks.DataAccess.Configurations.HumanResources
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Employee).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.EmployeeId); // FK_EmployeeAddress_Employee_EmployeeID
-            HasRequired(a => a.PersonAddresses).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.AddressId); // FK_EmployeeAddress_Address_AddressID
+            //HasRequired(a => a.Employee).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.EmployeeId); // FK_EmployeeAddress_Employee_EmployeeID
+            //HasRequired(a => a.Addresses).WithMany(b => b.EmployeeAddresses).HasForeignKey(c => c.AddressId); // FK_EmployeeAddress_Address_AddressID
         }
     }
 }

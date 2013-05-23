@@ -11,7 +11,10 @@ namespace AdventureWorks.DataAccess.Configurations.HumanResources
             ToTable("HumanResources.Employee");
             HasKey(x => x.EmployeeId);
 
-            Property(x => x.EmployeeId).HasColumnName("EmployeeID").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(x => x.EmployeeId)
+                .HasColumnName("EmployeeID")
+                .IsRequired()
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(x => x.NationalIdNumber).HasColumnName("NationalIDNumber").IsRequired().HasMaxLength(15);
             Property(x => x.ContactId).HasColumnName("ContactID").IsRequired();
             Property(x => x.LoginId).HasColumnName("LoginID").IsRequired().HasMaxLength(256);
@@ -29,8 +32,21 @@ namespace AdventureWorks.DataAccess.Configurations.HumanResources
             Property(x => x.ModifiedDate).HasColumnName("ModifiedDate").IsRequired();
 
             // Foreign keys
-            HasRequired(a => a.Contact).WithMany(b => b.HumanResources_Employee).HasForeignKey(c => c.ContactId); // FK_Employee_Contact_ContactID
-            HasOptional(a => a.Manager).WithMany(b => b.Subordinates).HasForeignKey(c => c.ManagerId); // FK_Employee_Employee_ManagerID
+            HasRequired(a => a.Contact).WithMany(b => b.HumanResources_Employee).HasForeignKey(c => c.ContactId);
+            // FK_Employee_Contact_ContactID
+            HasOptional(a => a.Manager).WithMany(b => b.Subordinates).HasForeignKey(c => c.ManagerId);
+            // FK_Employee_Employee_ManagerID
+
+            //many to many by HumanResources.EmployeeAddress 
+            HasMany(employee => employee.Addresses)
+                .WithMany(address => address.Employees)
+                .Map(x =>
+                    {
+                        x.ToTable("EmployeeAddress", "HumanResources");
+                        x.MapLeftKey("EmployeeID");
+                        x.MapRightKey("AddressID");
+                    });
+
         }
     }
 }

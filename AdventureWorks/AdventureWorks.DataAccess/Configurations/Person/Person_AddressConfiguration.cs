@@ -4,7 +4,7 @@ using AdventureWorks.Model.Person;
 
 namespace AdventureWorks.DataAccess.Configurations.Person
 {
-    internal class Person_AddressConfiguration : EntityTypeConfiguration<PersonAddress>
+    internal class Person_AddressConfiguration : EntityTypeConfiguration<Address>
     {
         public Person_AddressConfiguration()
         {

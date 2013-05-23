@@ -52,7 +52,6 @@
     <Compile Include="ErrorLog.cs" />
     <Compile Include="HumanResources\Department.cs" />
     <Compile Include="HumanResources\Employee.cs" />
-    <Compile Include="HumanResources\EmployeeAddress.cs" />
     <Compile Include="HumanResources\EmployeeDepartmentHistory.cs" />
     <Compile Include="HumanResources\EmployeePayHistory.cs" />
     <Compile Include="HumanResources\JobCandidate.cs" />

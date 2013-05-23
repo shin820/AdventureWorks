@@ -19,7 +19,7 @@ namespace AdventureWorks.DataAccess.Configurations.Sales
 
             // Foreign keys
             HasRequired(a => a.Sales_Customer).WithMany(b => b.Sales_CustomerAddress).HasForeignKey(c => c.CustomerId); // FK_CustomerAddress_Customer_CustomerID
-            HasRequired(a => a.Person_Address).WithMany(b => b.CustomerAddresses).HasForeignKey(c => c.AddressId); // FK_CustomerAddress_Address_AddressID
+            HasRequired(a => a.Address).WithMany(b => b.CustomerAddresses).HasForeignKey(c => c.AddressId); // FK_CustomerAddress_Address_AddressID
             HasRequired(a => a.Person_AddressType).WithMany(b => b.Sales_CustomerAddress).HasForeignKey(c => c.AddressTypeId); // FK_CustomerAddress_AddressType_AddressTypeID
         }
     }

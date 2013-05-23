@@ -27,16 +27,22 @@ namespace AdventureWorks.Model.HumanResources
 
         // Reverse navigation
         public ICollection<Employee> Subordinates { get; set; } // Employee.FK_Employee_Employee_ManagerID;
-        public ICollection<EmployeeAddress> EmployeeAddresses { get; set; } // EmployeeAddress.FK_EmployeeAddress_Employee_EmployeeID;
-        public ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_EmployeeID;
-        public ICollection<EmployeePayHistory> EmployeePayHistories { get; set; } // EmployeePayHistory.FK_EmployeePayHistory_Employee_EmployeeID;
-        public ICollection<JobCandidate> JobCandidates { get; set; } // JobCandidate.FK_JobCandidate_Employee_EmployeeID;
-        public ICollection<Purchasing_PurchaseOrderHeader> PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
+        public ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; }
+        // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_EmployeeID;
+        public ICollection<EmployeePayHistory> EmployeePayHistories { get; set; }
+        // EmployeePayHistory.FK_EmployeePayHistory_Employee_EmployeeID;
+        public ICollection<JobCandidate> JobCandidates { get; set; }
+        // JobCandidate.FK_JobCandidate_Employee_EmployeeID;
+        public ICollection<Purchasing_PurchaseOrderHeader> PurchaseOrderHeaders { get; set; }
+        // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID;
         public Sales_SalesPerson SalesPersons { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
 
+        //many to many by HumanResources.EmployeeAddress
+        public ICollection<Address> Addresses { get; set; }
+
         // Foreign keys
-        public virtual Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
-        public virtual Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
+        public Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
+        public Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
 
         public Employee()
         {
@@ -47,11 +53,11 @@ namespace AdventureWorks.Model.HumanResources
             Rowguid = Guid.NewGuid();
             ModifiedDate = DateTime.Now;
             Subordinates = new List<Employee>();
-            EmployeeAddresses = new List<EmployeeAddress>();
             EmployeeDepartmentHistories = new List<EmployeeDepartmentHistory>();
             EmployeePayHistories = new List<EmployeePayHistory>();
             JobCandidates = new List<JobCandidate>();
             PurchaseOrderHeaders = new List<Purchasing_PurchaseOrderHeader>();
+            Addresses = new List<Address>();
         }
     }
 }

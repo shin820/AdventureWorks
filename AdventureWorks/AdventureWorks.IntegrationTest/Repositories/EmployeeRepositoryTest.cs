@@ -24,6 +24,22 @@ namespace AdventureWorks.IntegrationTest.Repositories
             _repository = new EmployeeRepository(new UnitOfWork(Context));
         }
 
+        [Test]
+        public void ShouldGetEmployeeAdresses()
+        {
+            AddTestEntities();
+            Employee added = GetTestEntity();
+            Assert.Greater(added.Addresses.Count, 0);
+        }
+
+        [Test]
+        public void ShouldGetEmployeeContact()
+        {
+            AddTestEntities();
+            Employee added = GetTestEntity();
+            Assert.IsNotNull(added.Contact);
+        }
+
         protected override IRepository<Employee> GetRepository()
         {
             return _repository;
@@ -50,7 +66,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
 
         protected override Employee MakeTestEntity()
         {
-            return new Employee
+            Employee employee = new Employee
                 {
                     NationalIdNumber = DateTime.Now.ToString("hh24mmssfff"),
                     LoginId = "TEST_" + DateTime.Now.ToString("yyyyMMddhh24mmssfff"),
@@ -67,6 +83,16 @@ namespace AdventureWorks.IntegrationTest.Repositories
                             PasswordSalt = "TEST_SALT",
                         }
                 };
+
+            employee.Addresses.Add(new Address
+                {
+                    AddressLine1 = "TEST_ADDRESS_" + DateTime.Now.ToString("yyyyMMddhh24mmssfff"),
+                    City = "TEST_CITY",
+                    StateProvinceId = 79,
+                    PostalCode = "111111",
+                });
+
+            return employee;
         }
 
         protected override void AssertEntitiesAreEqual(Employee expected, Employee actual)

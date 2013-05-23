@@ -60,7 +60,6 @@
     <Compile Include="Configurations\DatabaseLogConfiguration.cs" />
     <Compile Include="Configurations\ErrorLogConfiguration.cs" />
     <Compile Include="Configurations\HumanResources\DepartmentConfiguration.cs" />
-    <Compile Include="Configurations\HumanResources\EmployeeAddressConfiguration.cs" />
     <Compile Include="Configurations\HumanResources\EmployeeConfiguration.cs" />
     <Compile Include="Configurations\HumanResources\EmployeeDepartmentHistoryConfiguration.cs" />
     <Compile Include="Configurations\HumanResources\EmployeePayHistoryConfiguration.cs" />

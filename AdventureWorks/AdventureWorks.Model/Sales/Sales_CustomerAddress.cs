@@ -13,7 +13,7 @@ namespace AdventureWorks.Model.Sales
 
         // Foreign keys
         public virtual Sales_Customer Sales_Customer { get; set; } //  CustomerId - FK_CustomerAddress_Customer_CustomerID
-        public virtual PersonAddress Person_Address { get; set; } //  AddressId - FK_CustomerAddress_Address_AddressID
+        public virtual Address Address { get; set; } //  AddressId - FK_CustomerAddress_Address_AddressID
         public virtual Person_AddressType Person_AddressType { get; set; } //  AddressTypeId - FK_CustomerAddress_AddressType_AddressTypeID
 
         public Sales_CustomerAddress()

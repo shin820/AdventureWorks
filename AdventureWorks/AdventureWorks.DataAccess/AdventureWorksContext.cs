@@ -26,7 +26,7 @@ namespace AdventureWorks.DataAccess
         //public IDbSet<EmployeePayHistory> HumanResources_EmployeePayHistory { get; set; } // EmployeePayHistory
         //public IDbSet<JobCandidate> HumanResources_JobCandidate { get; set; } // JobCandidate
         //public IDbSet<Shift> HumanResources_Shift { get; set; } // Shift
-        //public IDbSet<PersonAddresses> PersonAddresses { get; set; } // Address
+        //public IDbSet<Addresses> Addresses { get; set; } // Address
         //public IDbSet<Person_AddressType> Person_AddressType { get; set; } // AddressType
         //public IDbSet<Person_Contact> Person_Contact { get; set; } // Contact
         //public IDbSet<Person_ContactType> Person_ContactType { get; set; } // ContactType
@@ -155,7 +155,7 @@ namespace AdventureWorks.DataAccess
             modelBuilder.Configurations.Add(new ErrorLogConfiguration());
             modelBuilder.Configurations.Add(new DepartmentConfiguration());
             modelBuilder.Configurations.Add(new EmployeeConfiguration());
-            modelBuilder.Configurations.Add(new EmployeeAddressConfiguration());
+            //modelBuilder.Configurations.Add(new EmployeeAddressConfiguration());
             modelBuilder.Configurations.Add(new EmployeeDepartmentHistoryConfiguration());
             modelBuilder.Configurations.Add(new EmployeePayHistoryConfiguration());
             modelBuilder.Configurations.Add(new JobCandidateConfiguration());

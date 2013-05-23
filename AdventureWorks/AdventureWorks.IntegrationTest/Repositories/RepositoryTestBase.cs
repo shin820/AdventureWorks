@@ -28,7 +28,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
         [Test]
         public void ShouldAddEntity()
         {
-            AddTestDepartments();
+            AddTestEntities();
             TEntity added = GetTestEntity();
 
             AssertEntitiesAreEqual(MakeTestEntity(), added);
@@ -37,7 +37,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
         [Test]
         public void ShouldUpdateEntity()
         {
-            AddTestDepartments();
+            AddTestEntities();
 
             TEntity beforeUpdate = GetTestEntity();
             ChangePeroperties(beforeUpdate);
@@ -54,7 +54,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
         [Test]
         public void ShouldDeleteEntity()
         {
-            AddTestDepartments();
+            AddTestEntities();
 
             TEntity beforeDelete = GetTestEntity();
             GetRepository().Delete(beforeDelete);
@@ -70,12 +70,12 @@ namespace AdventureWorks.IntegrationTest.Repositories
         protected abstract void AssertEntitiesAreEqual(TEntity expected, TEntity actual);
         protected abstract void ChangePeroperties(TEntity entity);
 
-        private TEntity GetTestEntity()
+        protected TEntity GetTestEntity()
         {
             return GetRepository().FindAll().Where(IdentifyTestEntityExpression()).FirstOrDefault();
         }
 
-        private void AddTestDepartments()
+        protected void AddTestEntities()
         {
             DeleteTestEntities();
 

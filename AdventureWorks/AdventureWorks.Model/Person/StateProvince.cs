@@ -16,7 +16,7 @@ namespace AdventureWorks.Model.Person
         public DateTime ModifiedDate { get; set; } // ModifiedDate
 
         // Reverse navigation
-        public ICollection<PersonAddress> PersonAddresses { get; set; } // Address.FK_Address_StateProvince_StateProvinceID;
+        public ICollection<Address> PersonAddresses { get; set; } // Address.FK_Address_StateProvince_StateProvinceID;
         public ICollection<Sales_SalesTaxRate> SalesTaxRates { get; set; } // SalesTaxRate.FK_SalesTaxRate_StateProvince_StateProvinceID;
 
         // Foreign keys
@@ -28,7 +28,7 @@ namespace AdventureWorks.Model.Person
             IsOnlyStateProvinceFlag = true;
             Rowguid = Guid.NewGuid();
             ModifiedDate = DateTime.Now;
-            PersonAddresses = new List<PersonAddress>();
+            PersonAddresses = new List<Address>();
             SalesTaxRates = new List<Sales_SalesTaxRate>();
         }
     }
