@@ -29,9 +29,14 @@ namespace AdventureWorks.DataAccess.Repositories
             _unitOfWork.RegisterNew(entity);
         }
 
-        public void Delete(TEntity entity)
+        public virtual void Delete(TEntity entity)
         {
             _unitOfWork.RegisterDeleted(entity);
+        }
+
+        public void Update(TEntity entity)
+        {
+            _unitOfWork.RegisterChanged(entity);
         }
 
         public IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> filter)

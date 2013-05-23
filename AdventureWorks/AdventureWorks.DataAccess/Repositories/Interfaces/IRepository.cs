@@ -10,6 +10,7 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
     {
         void Add(TEntity entity);
         void Delete(TEntity entity);
+        void Update(TEntity entity);
         IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> filter);
         IQueryable<TEntity> FindAll();
         void SaveChanges<T>(T root) where T : ObjectWithState;

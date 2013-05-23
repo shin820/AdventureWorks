@@ -35,8 +35,8 @@ namespace AdventureWorks.Model.HumanResources
         public Sales_SalesPerson SalesPersons { get; set; } // SalesPerson.FK_SalesPerson_Employee_SalesPersonID;
 
         // Foreign keys
-        public Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
-        public Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
+        public virtual Person_Contact Contact { get; set; } //  ContactId - FK_Employee_Contact_ContactID
+        public virtual Employee Manager { get; set; } //  ManagerId - FK_Employee_Employee_ManagerID
 
         public Employee()
         {

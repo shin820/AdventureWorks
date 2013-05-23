@@ -51,7 +51,9 @@
     <Compile Include="AdventureWorksContext.cs" />
     <Compile Include="IDbContext.cs" />
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Repositories\Interfaces\IDepartmentRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Configurations\AwBuildVersionConfiguration.cs" />

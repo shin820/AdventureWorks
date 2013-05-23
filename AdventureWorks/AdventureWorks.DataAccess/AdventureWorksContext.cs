@@ -236,7 +236,14 @@ namespace AdventureWorks.DataAccess
 
         public void Rollback()
         {
-            this.ChangeTracker.Entries().ToList().ForEach(e => e.Reload());
+            var entries = this.ChangeTracker.Entries();
+            foreach (var dbEntityEntry in entries)
+            {
+                if (dbEntityEntry.State != EntityState.Added)
+                {
+                    dbEntityEntry.Reload();
+                }
+            }
         }
 
         private void LogChanges()
