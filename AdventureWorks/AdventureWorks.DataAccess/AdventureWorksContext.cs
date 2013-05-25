@@ -224,7 +224,7 @@ namespace AdventureWorks.DataAccess
             modelBuilder.Configurations.Add(new Sales_WebSiteHitsConfiguration());
         }
 
-        public IQueryable<T> FindAll<T>() where T : class
+        public IDbSet<T> FindAll<T>() where T : class
         {
             return this.Set<T>();
         }

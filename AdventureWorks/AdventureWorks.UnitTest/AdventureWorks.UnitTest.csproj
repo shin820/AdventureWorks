@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AdventureWorks.DataAccess\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
     </Reference>
@@ -46,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryTest.cs" />
+    <Compile Include="TestHelper\FakeDbSetBuilder.cs" />
+    <Compile Include="TestHelper\FakeObject.cs" />
+    <Compile Include="TestHelper\FakeRepository.cs" />
+    <Compile Include="TestHelper\GenericFakeDbSet.cs" />
+    <Compile Include="GenericFakeDbSetTest.cs" />
     <Compile Include="UnitOfWorkTest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +65,10 @@
     <ProjectReference Include="..\AdventureWorks.DataAccess\AdventureWorks.DataAccess.csproj">
       <Project>{0298eb71-d471-49e6-ac45-116c8b5bbdf4}</Project>
       <Name>AdventureWorks.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventureWorks.Model\AdventureWorks.Model.csproj">
+      <Project>{6e474691-98af-4f4e-b632-ea19be88e33d}</Project>
+      <Name>AdventureWorks.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

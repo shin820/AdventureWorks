@@ -11,7 +11,7 @@ using AdventureWorks.Model;
 namespace AdventureWorks.DataAccess.Repositories
 {
     public abstract class Repository<TEntity> : IRepository<TEntity>,IUnitOfWorkRepository<TEntity>
-        where TEntity : ObjectWithState
+        where TEntity : class 
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -40,7 +40,7 @@ namespace AdventureWorks.DataAccess.Repositories
 
         public IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter)
         {
-            return DbContext.Set<TEntity>().Where(filter);
+            return DbContext.FindAll<TEntity>().Where(filter);
         }
 
         public IQueryable<TEntity> FindAll()
@@ -52,7 +52,7 @@ namespace AdventureWorks.DataAccess.Repositories
 
         public void PersistCreation(TEntity entity)
         {
-            DbContext.Set<TEntity>().Add(entity);
+            DbContext.FindAll<TEntity>().Add(entity);
         }
 
         public void PersistUpdate(TEntity entity)
@@ -62,7 +62,7 @@ namespace AdventureWorks.DataAccess.Repositories
 
         public void PersistDeletion(TEntity entity)
         {
-            DbContext.Set<TEntity>().Remove(entity);
+            DbContext.FindAll<TEntity>().Remove(entity);
         }
 
         #endregion
