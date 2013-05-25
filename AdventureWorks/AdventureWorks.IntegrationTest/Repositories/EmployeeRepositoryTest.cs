@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AdventureWorks.DataAccess;
 using AdventureWorks.DataAccess.Repositories;
 using AdventureWorks.DataAccess.Repositories.Interfaces;
+using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.Model.HumanResources;
 using AdventureWorks.Model.Person;
 using NUnit.Framework;
@@ -21,7 +22,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
         [TestFixtureSetUp]
         public void TestFixtureSetUp()
         {
-            _repository = new EmployeeRepository(new UnitOfWork(Context));
+            _repository = new EmployeeRepository(Context, new EFUnitOfWork(Context));
         }
 
         [Test]

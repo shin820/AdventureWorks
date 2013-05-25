@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using AdventureWorks.DataAccess;
+using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.DataAccess.Repositories.Interfaces;
 using AdventureWorks.Model.HumanResources;
 using NUnit.Framework;
@@ -11,11 +12,13 @@ namespace AdventureWorks.IntegrationTest.Repositories
     public abstract class RepositoryTestBase<TEntity> where TEntity : class
     {
         protected AdventureWorksContext Context;
-        
+        protected IUnitOfWork UnitOfWork;
+
         [TestFixtureSetUp]
         public void BaseTestFixtureSetUp()
         {
             Context = new AdventureWorksContext("AdventureWorks");
+            UnitOfWork = new EFUnitOfWork(Context);
         }
 
         [TestFixtureTearDown]
@@ -41,7 +44,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
 
             TEntity beforeUpdate = GetTestEntity();
             ChangePeroperties(beforeUpdate);
-            GetRepository().SaveChanges();
+            UnitOfWork.Commit();
 
             TEntity afterUpdate = GetTestEntity();
 
@@ -58,7 +61,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
 
             TEntity beforeDelete = GetTestEntity();
             GetRepository().Delete(beforeDelete);
-            GetRepository().SaveChanges();
+            UnitOfWork.Commit();
 
             TEntity afterDelete = GetTestEntity();
             Assert.IsNull(afterDelete);
@@ -80,7 +83,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
             DeleteTestEntities();
 
             GetRepository().Add(MakeTestEntity());
-            GetRepository().SaveChanges();
+            UnitOfWork.Commit();
         }
 
         private void DeleteTestEntities()
@@ -88,7 +91,7 @@ namespace AdventureWorks.IntegrationTest.Repositories
             var testDepartments = from d in GetRepository().FindAll().Where(IdentifyTestEntityExpression()) select d;
             Enumerable.ToList<TEntity>(testDepartments).ForEach(d => GetRepository().Delete(d));
 
-            GetRepository().SaveChanges();
+            UnitOfWork.Commit();
         }
     }
 }

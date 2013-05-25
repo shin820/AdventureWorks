@@ -8,13 +8,19 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
     public interface IRepository<TEntity>
         where TEntity : class
     {
+        IQueryable<TEntity> FindAll();
+        //IQueryable<TEntity> FindAll(int pageIndex,int pageSize,ref in count);
+
+        IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter);
+        //IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter, int pageIndex, int pageSize, ref int count);
+
+        //TEntity Find(TEntityKey id);
+
+        //void SaveChanges(TEntity root);
+        //void SaveChanges();
+
         void Add(TEntity entity);
         void Delete(TEntity entity);
         void Update(TEntity entity);
-        IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> filter);
-        IQueryable<TEntity> FindAll();
-        void SaveChanges<T>(T root) where T : ObjectWithState;
-        void SaveChanges();
-        void RollbackChanges();
     }
 }
