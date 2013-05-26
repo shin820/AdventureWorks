@@ -9,5 +9,6 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
 {
     public interface IEmployeeRepository : IRepository<Employee>
     {
+        IEnumerable<Employee> GetEmployees();
     }
 }

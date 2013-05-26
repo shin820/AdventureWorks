@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.Model.HumanResources;
 using AdventureWorks.DataAccess.Repositories.Interfaces;
+using System.Data.Entity;
 
 namespace AdventureWorks.DataAccess.Repositories
 {
@@ -21,6 +22,14 @@ namespace AdventureWorks.DataAccess.Repositories
         {
             entity.CurrentFlag = false;
             Update(entity);
+        }
+
+        public IEnumerable<Employee> GetEmployees()
+        {
+            var employees = from e in this.FindAll().Include(t => t.Contact).Include(t => t.Manager)
+                            where e.CurrentFlag
+                            select e;
+            return employees.AsEnumerable();
         }
     }
 }

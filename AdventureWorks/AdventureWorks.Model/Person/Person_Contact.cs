@@ -24,6 +24,18 @@ namespace AdventureWorks.Model.Person
         public Guid Rowguid { get; set; } // rowguid
         public DateTime ModifiedDate { get; set; } // ModifiedDate
 
+        public string FullName
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(this.MiddleName))
+                {
+                    return this.FirstName + " " + this.MiddleName + " " + this.LastName;
+                }
+                return this.FirstName + " " + LastName;
+            }
+        }
+
         // Reverse navigation
         public virtual ICollection<Sales_ContactCreditCard> Sales_ContactCreditCard { get; set; } // ContactCreditCard.FK_ContactCreditCard_Contact_ContactID;
         public virtual ICollection<Employee> HumanResources_Employee { get; set; } // Employee.FK_Employee_Contact_ContactID;
