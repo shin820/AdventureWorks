@@ -10,7 +10,7 @@ using AdventureWorks.Service.ViewModel;
 
 namespace AdventureWorks.Service
 {
-    public class EmployeeService
+    public class EmployeeService : IEmployeeService
     {
         private readonly IEmployeeRepository _repository;
 

@@ -1,0 +1,40 @@
+﻿@model System.Collections.Generic.IEnumerable<AdventureWorks.Service.ViewModel.EmployeeViewModel>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>title</h2>
+<table>
+    <thead>
+        <tr>
+            <td>登陆ID</td>
+            <td>身份证</td>
+            <td>姓名</td>
+            <td>邮箱</td>
+            <td>联系电话</td>
+            <td>职位</td>
+            <td>上司姓名</td>
+            <td>生日</td>
+            <td>婚姻状态</td>
+            <td>性别</td>
+            <td>入职日期</td>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.LoginId</td>
+            <td>@item.NationalIdNumber</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+            <td>@item.Title</td>
+            <td>@item.ManagerName</td>
+            <td>@item.BirthDate</td>
+            <td>@item.MaritalStatus</td>
+            <td>@item.Gender</td>
+            <td>@item.HireDate</td>
+        </tr>
+    }
+</table>

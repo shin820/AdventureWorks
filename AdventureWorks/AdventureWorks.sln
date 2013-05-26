@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Service", "AdventureWorks.Service\AdventureWorks.Service.csproj", "{6CDAD458-406D-4F70-A94D-904EEA168ACF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.WebUI.MVC", "AdventureWorks.WebUI.MVC\AdventureWorks.WebUI.MVC.csproj", "{B2EC2D43-1389-4A96-BB24-5BF5C6A6117F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{6CDAD458-406D-4F70-A94D-904EEA168ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDAD458-406D-4F70-A94D-904EEA168ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDAD458-406D-4F70-A94D-904EEA168ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2EC2D43-1389-4A96-BB24-5BF5C6A6117F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EC2D43-1389-4A96-BB24-5BF5C6A6117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EC2D43-1389-4A96-BB24-5BF5C6A6117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EC2D43-1389-4A96-BB24-5BF5C6A6117F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
