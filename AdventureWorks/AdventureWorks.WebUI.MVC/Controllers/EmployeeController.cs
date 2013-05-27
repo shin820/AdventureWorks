@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using AdventureWorks.DataAccess;
-using AdventureWorks.DataAccess.Repositories;
-using AdventureWorks.DataAccess.Repositories.Interfaces;
-using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.Service;
 using AdventureWorks.Service.ViewModel;
+using AdventureWorks.WebUI.MVC.Context;
+using Microsoft.Practices.Unity;
 
 namespace AdventureWorks.WebUI.MVC.Controllers
 {
@@ -18,10 +13,7 @@ namespace AdventureWorks.WebUI.MVC.Controllers
 
         public EmployeeController()
         {
-            IDbContext context = new AdventureWorksContext("AdventureWorks");
-            IUnitOfWork unitOfWork = new EFUnitOfWork(context);
-            IEmployeeRepository repository = new EmployeeRepository(context, unitOfWork);
-            _service = new EmployeeService(repository);
+            _service = ApplicationContext.Current.Container.Resolve<IEmployeeService>();
         }
 
 
