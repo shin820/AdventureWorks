@@ -67,5 +67,20 @@ namespace AdventureWorks.DataAccess.Repositories
 
         #endregion
 
+
+
+        //public IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter,
+        //                                        Expression<Func<TEntity, TKey>> orderby, int pageIndex, int pageSize,
+        //                                        ref int count)
+        //{
+        //    count = DbContext.FindAll<TEntity>().Count(filter);
+        //    var result = DbContext.FindAll<TEntity>()
+        //                          .Where(filter)
+        //                          .OrderBy(orderby)
+        //                          .Skip((pageIndex - 1)*pageSize)
+        //                          .Take(pageSize);
+
+        //    return result;
+        //}
     }
 }

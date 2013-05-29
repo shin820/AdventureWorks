@@ -1,4 +1,4 @@
-﻿@model System.Collections.Generic.IEnumerable<AdventureWorks.Service.ViewModel.EmployeeViewModel>
+﻿@model AdventureWorks.Service.ViewModel.EmployeeListViewModel
 
 @{
     ViewBag.Title = "title";
@@ -21,7 +21,7 @@
             <td>入职日期</td>
         </tr>
     </thead>
-    @foreach (var item in Model)
+    @foreach (var item in Model.Employees)
     {
         <tr>
             <td>@item.LoginId</td>
@@ -38,3 +38,6 @@
         </tr>
     }
 </table>
+<div class="pager">
+    @Html.PaginationLinks(Model.PageInfo, x => Url.Action("Details", new { page = x }))
+</div>

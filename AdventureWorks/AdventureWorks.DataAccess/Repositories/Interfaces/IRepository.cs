@@ -12,7 +12,8 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
         //IQueryable<TEntity> FindAll(int pageIndex,int pageSize,ref in count);
 
         IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter);
-        //IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter, int pageIndex, int pageSize, ref int count);
+
+        //IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> orderby,int pageIndex, int pageSize, ref int count);
 
         //TEntity Find(TEntityKey id);
 

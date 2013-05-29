@@ -23,13 +23,5 @@ namespace AdventureWorks.DataAccess.Repositories
             entity.CurrentFlag = false;
             Update(entity);
         }
-
-        public IEnumerable<Employee> GetEmployees()
-        {
-            var employees = from e in this.FindAll().Include(t => t.Contact).Include(t => t.Manager.Contact)
-                            where e.CurrentFlag
-                            select e;
-            return employees.AsEnumerable();
-        }
     }
 }

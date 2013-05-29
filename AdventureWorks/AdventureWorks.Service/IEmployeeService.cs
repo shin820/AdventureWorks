@@ -6,5 +6,6 @@ namespace AdventureWorks.Service
     public interface IEmployeeService
     {
         IEnumerable<EmployeeViewModel> GetEmployees();
+        EmployeeListViewModel GetEmployees(int pageIndex, int pageSize);
     }
 }

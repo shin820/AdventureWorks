@@ -46,10 +46,10 @@ namespace AdventureWorks.UnitTest
                     Gender = "M",
                     HireDate = DateTime.Now
                 };
-            mockRepository.Setup(t => t.GetEmployees()).Returns(new List<Employee>
+            mockRepository.Setup(t => t.FindAll()).Returns(new List<Employee>
                 {
                     testEmployee
-                });
+                }.AsQueryable);
 
             EmployeeService service = new EmployeeService(mockRepository.Object);
 

@@ -17,10 +17,9 @@ namespace AdventureWorks.WebUI.MVC.Controllers
         }
 
 
-        public ActionResult Details()
+        public ViewResult Details(int page = 1)
         {
-            IEnumerable<EmployeeViewModel> employees = _service.GetEmployees();
-            return View(employees);
+            return View(_service.GetEmployees(page, 20));
         }
     }
 }
