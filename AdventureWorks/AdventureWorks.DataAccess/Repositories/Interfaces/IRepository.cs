@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using AdventureWorks.DataAccess.Repositories.Enum;
 using AdventureWorks.Model;
 
 namespace AdventureWorks.DataAccess.Repositories.Interfaces
@@ -13,7 +14,11 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
 
         IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> filter);
 
-        //IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> orderby,int pageIndex, int pageSize, ref int count);
+        IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> orderby,
+                                         int pageIndex, int pageSize, ref int count);
+
+        IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> orderby,
+                                         OrderByType orderByType, int pageIndex, int pageSize, ref int count);
 
         //TEntity Find(TEntityKey id);
 

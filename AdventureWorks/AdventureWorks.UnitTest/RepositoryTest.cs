@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AdventureWorks.DataAccess;
+using AdventureWorks.DataAccess.Repositories.Enum;
 using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.UnitTest.TestHelper;
 using NUnit.Framework;
@@ -66,20 +67,37 @@ namespace AdventureWorks.UnitTest
         public void ShouldFindEntityByExpression()
         {
             MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
+
             var result = _repository.FindBy(t => t.Id == 1 || t.Id == 2);
+
             Assert.AreEqual(2, result.Count());
         }
 
-        //[Test]
-        //public void ShouldFindByPagination()
-        //{
-        //    MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
-        //    int count = 0;
-        //    var result = _repository.FindBy(t => true, t => t.Id, 2, 2, ref count).ToList();
-        //    Assert.AreEqual(5, count);
-        //    Assert.AreEqual("Test Name 3", result[0].Name);
-        //    Assert.AreEqual("Test Name 4", result[1].Name);
-        //}
+        [Test]
+        public void ShouldFindByPagination()
+        {
+            MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
+
+            int count = 0;
+            var result = _repository.FindBy(t => true, t => t.Id, 2, 2, ref count).ToList();
+            
+            Assert.AreEqual(5, count);
+            Assert.AreEqual("Test Name 3", result[0].Name);
+            Assert.AreEqual("Test Name 4", result[1].Name);
+        }
+
+        [Test]
+        public void ShouldFindByPaginationOrderByDesc()
+        {
+            MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
+
+            int count = 0;
+            var result = _repository.FindBy(t => true, t => t.Id, OrderByType.DESC, 2, 2, ref count).ToList();
+            
+            Assert.AreEqual(5, count);
+            Assert.AreEqual("Test Name 3", result[0].Name);
+            Assert.AreEqual("Test Name 2", result[1].Name);
+        }
 
         private List<FakeObject> MakeFakeObjects()
         {

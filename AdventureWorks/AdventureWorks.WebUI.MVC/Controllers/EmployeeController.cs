@@ -2,7 +2,6 @@
 using System.Web.Mvc;
 using AdventureWorks.Service;
 using AdventureWorks.Service.ViewModel;
-using AdventureWorks.WebUI.MVC.Context;
 using Microsoft.Practices.Unity;
 
 namespace AdventureWorks.WebUI.MVC.Controllers
@@ -11,11 +10,10 @@ namespace AdventureWorks.WebUI.MVC.Controllers
     {
         private readonly IEmployeeService _service;
 
-        public EmployeeController()
+        public EmployeeController(IEmployeeService service)
         {
-            _service = ApplicationContext.Current.Container.Resolve<IEmployeeService>();
+            _service = service;
         }
-
 
         public ViewResult Details(int page = 1)
         {

@@ -4,14 +4,15 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
+using AdventureWorks.DataAccess.Repositories.Enum;
 using AdventureWorks.DataAccess.Repositories.Interfaces;
 using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.Model;
 
 namespace AdventureWorks.DataAccess.Repositories
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity>,IUnitOfWorkRepository<TEntity>
-        where TEntity : class 
+    public abstract class Repository<TEntity> : IRepository<TEntity>, IUnitOfWorkRepository<TEntity>
+        where TEntity : class
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -69,18 +70,28 @@ namespace AdventureWorks.DataAccess.Repositories
 
 
 
-        //public IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter,
-        //                                        Expression<Func<TEntity, TKey>> orderby, int pageIndex, int pageSize,
-        //                                        ref int count)
-        //{
-        //    count = DbContext.FindAll<TEntity>().Count(filter);
-        //    var result = DbContext.FindAll<TEntity>()
-        //                          .Where(filter)
-        //                          .OrderBy(orderby)
-        //                          .Skip((pageIndex - 1)*pageSize)
-        //                          .Take(pageSize);
+        public IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter,
+                                                Expression<Func<TEntity, TKey>> orderby, int pageIndex, int pageSize,
+                                                ref int count)
+        {
+            return FindBy(filter, orderby, OrderByType.ASC, pageIndex, pageSize, ref count);
+        }
 
-        //    return result;
-        //}
+        public IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter,
+                                                Expression<Func<TEntity, TKey>> orderby, OrderByType orderByType,
+                                                int pageIndex, int pageSize,
+                                                ref int count)
+        {
+            count = DbContext.FindAll<TEntity>().Count(filter);
+            var result = DbContext.FindAll<TEntity>()
+                                  .Where(filter);
+
+            result = orderByType == OrderByType.DESC ? result.OrderByDescending(orderby) : result.OrderBy(orderby);
+
+            result = result.Skip((pageIndex - 1)*pageSize)
+                           .Take(pageSize);
+
+            return result;
+        }
     }
 }

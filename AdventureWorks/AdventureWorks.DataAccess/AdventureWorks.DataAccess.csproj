@@ -52,6 +52,7 @@
     <Compile Include="AdventureWorksContext.cs" />
     <Compile Include="IDbContext.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\Enum\OrderByType.cs" />
     <Compile Include="Repositories\Interfaces\IDepartmentRepository.cs" />
     <Compile Include="Repositories\Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRepository.cs" />
