@@ -60,3 +60,13 @@ obj
 /AdventureWorks/AdventureWorks.WebUI.MVC/bin/AdventureWorks.Service.dll
 /AdventureWorks/AdventureWorks.WebUI.MVC/bin/AdventureWorks.Service.pdb
 /AdventureWorks/AdventureWorks.WebUI.MVC/bin/AdventureWorks.WebUI.MVC.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Service.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Service.pdb
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.UnitTest.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.UnitTest.pdb
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.DataAccess.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.DataAccess.pdb
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Infrastructure.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Infrastructure.pdb
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Model.dll
+/AdventureWorks/AdventureWorks.UnitTest/bin/Debug/AdventureWorks.Model.pdb
