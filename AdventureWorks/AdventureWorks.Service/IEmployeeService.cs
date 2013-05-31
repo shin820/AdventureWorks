@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using AdventureWorks.Service.ViewModel;
+using AdventureWorks.Model.HumanResources;
 
 namespace AdventureWorks.Service
 {
     public interface IEmployeeService
     {
-        IEnumerable<EmployeeViewModel> GetEmployees();
-        EmployeeListViewModel GetEmployees(int pageIndex, int pageSize);
+        List<Employee> GetEmployees(int pageIndex, int pageSize, out int count);
     }
 }

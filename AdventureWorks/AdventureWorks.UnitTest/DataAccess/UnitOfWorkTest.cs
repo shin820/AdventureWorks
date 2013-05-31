@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using AdventureWorks.DataAccess;
 using AdventureWorks.DataAccess.UnitOfWork;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace AdventureWorks.UnitTest
+namespace AdventureWorks.UnitTest.DataAccess
 {
-    [TestFixture]
+    [TestClass]
     public class UnitOfWorkTest
     {
         private Mock<IDbContext> _mockDbContext;
@@ -14,7 +14,7 @@ namespace AdventureWorks.UnitTest
         private EFUnitOfWork _testUnitOfWork;
         private object _testEntity;
 
-        [SetUp]
+        [TestInitialize]
         public void SetUp()
         {
             _mockDbContext = new Mock<IDbContext>();
@@ -24,35 +24,35 @@ namespace AdventureWorks.UnitTest
             _testEntity = new object();
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldPersistCreationWhenRegisterNew()
         {
             _testUnitOfWork.RegisterNew(_testEntity, _mockUnitOfWorkRepository.Object);
             _mockUnitOfWorkRepository.Verify(t => t.PersistCreation(_testEntity));
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldPersistUpdateWhenRegisterChanged()
         {
             _testUnitOfWork.RegisterChanged(_testEntity, _mockUnitOfWorkRepository.Object);
             _mockUnitOfWorkRepository.Verify(t => t.PersistUpdate(_testEntity));
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldPersistDeletionWhenRegisterDeleted()
         {
             _testUnitOfWork.RegisterDeleted(_testEntity, _mockUnitOfWorkRepository.Object);
             _mockUnitOfWorkRepository.Verify(t => t.PersistDeletion(_testEntity));
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldSaveChangesWhenCommit()
         {
             _testUnitOfWork.Commit();
             _mockDbContext.Verify(t => t.SaveChanges());
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldRollbackWhenCommitFailed()
         {
             _mockDbContext.Setup(t => t.SaveChanges()).Throws(new ApplicationException("Commit Failed"));

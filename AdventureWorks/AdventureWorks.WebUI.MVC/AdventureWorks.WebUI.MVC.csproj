@@ -179,6 +179,9 @@
     <Compile Include="Infrastructure\HtmlHelpers.cs" />
     <Compile Include="Infrastructure\UnityControllerFactory.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\EmployeeListViewModel.cs" />
+    <Compile Include="Models\EmployeeViewModel.cs" />
+    <Compile Include="Models\PageInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

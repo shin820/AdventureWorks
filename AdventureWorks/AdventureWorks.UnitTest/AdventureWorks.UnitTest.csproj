@@ -34,14 +34,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.0.0-alpha3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,15 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeServiceTest.cs" />
+    <Compile Include="Controllers\EmployeeControllerTest.cs" />
+    <Compile Include="DataAccess\RepositoryTest.cs" />
+    <Compile Include="DataAccess\UnitOfWorkTest.cs" />
+    <Compile Include="HtmlHelpersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryTest.cs" />
+    <Compile Include="Services\EmployeeServiceTest.cs" />
     <Compile Include="TestHelper\FakeDbSetBuilder.cs" />
     <Compile Include="TestHelper\FakeObject.cs" />
     <Compile Include="TestHelper\FakeRepository.cs" />
     <Compile Include="TestHelper\GenericFakeDbSet.cs" />
     <Compile Include="GenericFakeDbSetTest.cs" />
-    <Compile Include="UnitOfWorkTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -74,6 +76,10 @@
     <ProjectReference Include="..\AdventureWorks.Service\AdventureWorks.Service.csproj">
       <Project>{6cdad458-406d-4f70-a94d-904eea168acf}</Project>
       <Name>AdventureWorks.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventureWorks.WebUI.MVC\AdventureWorks.WebUI.MVC.csproj">
+      <Project>{b2ec2d43-1389-4a96-bb24-5bf5c6a6117f}</Project>
+      <Name>AdventureWorks.WebUI.MVC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

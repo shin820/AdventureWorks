@@ -1,17 +1,15 @@
-﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AdventureWorks.DataAccess;
 using AdventureWorks.DataAccess.Repositories.Enum;
 using AdventureWorks.DataAccess.UnitOfWork;
 using AdventureWorks.UnitTest.TestHelper;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace AdventureWorks.UnitTest
+namespace AdventureWorks.UnitTest.DataAccess
 {
+    [TestClass]
     public class RepositoryTest
     {
         private IUnitOfWork _unitOfWork;
@@ -19,8 +17,8 @@ namespace AdventureWorks.UnitTest
         private FakeRepository _repository;
         private GenericFakeDbSet<FakeObject, int> _fakeDbSet;
 
-        [SetUp]
-        public void SetUp()
+        [TestInitialize]
+        public void Initialize()
         {
             _mockDbContext = new Mock<IDbContext>();
             _fakeDbSet = FakeDbSetBuilder.New<FakeObject>().Build(t => t.Id);
@@ -31,8 +29,8 @@ namespace AdventureWorks.UnitTest
             _repository = new FakeRepository(_mockDbContext.Object, _unitOfWork);
         }
 
-        [Test]
-        public void ShouldAdd()
+        [TestMethod]
+        public void ShouldAddToDbSet()
         {
             var entity = new FakeObject {Id = 1, Name = "TestName"};
             _repository.Add(entity);
@@ -42,8 +40,8 @@ namespace AdventureWorks.UnitTest
             Assert.AreEqual("TestName", result.Name);
         }
 
-        [Test]
-        public void ShouldDelete()
+        [TestMethod]
+        public void ShouldDeleteFromDbSet()
         {
             var entity = new FakeObject {Id = 1, Name = "TestName"};
             _repository.Add(entity);
@@ -55,16 +53,16 @@ namespace AdventureWorks.UnitTest
             Assert.AreEqual(0, _fakeDbSet.Count());
         }
 
-        [Test]
-        public void ShouldFindAllEntity()
+        [TestMethod]
+        public void ShouldGetEntitiesFromDbSet()
         {
             MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
             var result = _repository.FindAll();
             Assert.AreEqual(5, result.Count());
         }
 
-        [Test]
-        public void ShouldFindEntityByExpression()
+        [TestMethod]
+        public void ShouldGetEntitiesByExpression()
         {
             MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
 
@@ -73,30 +71,43 @@ namespace AdventureWorks.UnitTest
             Assert.AreEqual(2, result.Count());
         }
 
-        [Test]
-        public void ShouldFindByPagination()
+        [TestMethod]
+        public void ShouldPaginateData()
         {
             MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
 
             int count = 0;
             var result = _repository.FindBy(t => true, t => t.Id, 2, 2, ref count).ToList();
-            
+
             Assert.AreEqual(5, count);
             Assert.AreEqual("Test Name 3", result[0].Name);
             Assert.AreEqual("Test Name 4", result[1].Name);
         }
 
-        [Test]
-        public void ShouldFindByPaginationOrderByDesc()
+        [TestMethod]
+        public void ShouldPaginateDataOrderByDesc()
         {
             MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
 
             int count = 0;
             var result = _repository.FindBy(t => true, t => t.Id, OrderByType.DESC, 2, 2, ref count).ToList();
-            
+
             Assert.AreEqual(5, count);
             Assert.AreEqual("Test Name 3", result[0].Name);
             Assert.AreEqual("Test Name 2", result[1].Name);
+        }
+
+        [TestMethod]
+        public void ShouldFilterAndPaginateData()
+        {
+            MakeFakeObjects().ForEach(t => _fakeDbSet.Add(t));
+
+            int count = 0;
+            var result =
+                _repository.FindBy(t => new[] {1, 3, 5}.Contains(t.Id), t => t.Id, 2, 2, ref count).ToList();
+
+            Assert.AreEqual(3, count);
+            Assert.AreEqual("Test Name 5", result[0].Name);
         }
 
         private List<FakeObject> MakeFakeObjects()

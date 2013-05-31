@@ -1,13 +1,14 @@
 using System.Linq;
 using AdventureWorks.Model.HumanResources;
 using AdventureWorks.UnitTest.TestHelper;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AdventureWorks.UnitTest
 {
+    [TestClass]
     public class GenericFakeDbSetTest
     {
-        [Test]
+        [TestMethod]
         public void FindTest()
         {
             var fake = FakeDbSetBuilder.New<Employee>().Build(t => t.EmployeeId);
@@ -19,7 +20,7 @@ namespace AdventureWorks.UnitTest
             Assert.AreEqual("Bob", result.Title);
         }
 
-        [Test]
+        [TestMethod]
         public void AddTest()
         {
             var fake = FakeDbSetBuilder.New<Employee>().Build(t => t.EmployeeId);

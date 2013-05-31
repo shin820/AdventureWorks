@@ -82,15 +82,13 @@ namespace AdventureWorks.DataAccess.Repositories
                                                 int pageIndex, int pageSize,
                                                 ref int count)
         {
-            count = DbContext.FindAll<TEntity>().Count(filter);
-            var result = DbContext.FindAll<TEntity>()
-                                  .Where(filter);
+            count = FindAll().Count(filter);
+            var result = FindAll().Where(filter);
 
             result = orderByType == OrderByType.DESC ? result.OrderByDescending(orderby) : result.OrderBy(orderby);
 
             result = result.Skip((pageIndex - 1)*pageSize)
                            .Take(pageSize);
-
             return result;
         }
     }

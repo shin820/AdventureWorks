@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Text;
 using System.Web.Mvc;
-using AdventureWorks.Service.ViewModel;
+using AdventureWorks.WebUI.MVC.Models;
 
 namespace AdventureWorks.WebUI.MVC.Infrastructure
 {
@@ -12,7 +12,7 @@ namespace AdventureWorks.WebUI.MVC.Infrastructure
                                                     Func<int, string> pageUrl)
         {
             var result = new StringBuilder();
-            for (int i = 1; i < pageInfo.TotalPages; i++)
+            for (int i = 1; i <= pageInfo.TotalPages; i++)
             {
                 var tag = new TagBuilder("a");
                 tag.MergeAttribute("href", pageUrl(i));
