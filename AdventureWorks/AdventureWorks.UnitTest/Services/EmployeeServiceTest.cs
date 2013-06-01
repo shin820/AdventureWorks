@@ -101,6 +101,12 @@ namespace AdventureWorks.UnitTest.Services
             {
                 throw new NotImplementedException();
             }
+
+
+            public Employee FindBy(int id)
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

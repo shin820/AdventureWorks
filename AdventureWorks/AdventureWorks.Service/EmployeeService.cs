@@ -18,7 +18,7 @@ namespace AdventureWorks.Service
             _repository = repository;
         }
 
-        public List<Employee> GetEmployees(int pageIndex, int pageSize, out int count )
+        public List<Employee> GetEmployees(int pageIndex, int pageSize, out int count)
         {
             count = _repository.FindAll().Count(t => t.CurrentFlag);
 
@@ -26,75 +26,20 @@ namespace AdventureWorks.Service
                 _repository.FindBy(t => t.CurrentFlag, t => t.LoginId, pageIndex, pageSize, ref count)
                            .Include(t => t.Contact)
                            .Include(t => t.Manager.Contact);
+            
 
             return employees.ToList();
-
-            //return new EmployeeListViewModel
-            //    {
-            //        Employees = from e in employees.AsEnumerable()
-            //                    select new EmployeeViewModel
-            //                        {
-            //                            EmployeeId = e.EmployeeId,
-            //                            LoginId = e.LoginId,
-            //                            NationalIdNumber = e.NationalIdNumber,
-            //                            Name = e.Contact.FullName,
-            //                            Email = e.Contact.EmailAddress,
-            //                            Phone = e.Contact.Phone,
-            //                            Title = e.Title,
-            //                            ManagerId = e.ManagerId ?? 0,
-            //                            ManagerName = e.Manager.Contact.FullName,
-            //                            BirthDate = e.BirthDate.ToString("yyyy-MM-dd"),
-            //                            MaritalStatus = e.MaritalStatus == "M" ? "已婚" : "未婚",
-            //                            Gender = e.Gender == "M" ? "男" : "女",
-            //                            HireDate = e.HireDate.ToString("yyyy-MM-dd")
-            //                        },
-            //        PageInfo = new PageInfo
-            //            {
-            //                CurrentPage = pageIndex,
-            //                ItemsPerPage = pageSize,
-            //                TotalItems = _repository.FindAll().Count(t => t.CurrentFlag)
-            //            }
-
-            //    };
-
         }
 
-        //public EmployeeListViewModel GetEmployees(int pageIndex, int pageSize)
-        //{
-        //    int count = 0;
-        //    var employees =
-        //        _repository.FindBy(t => t.CurrentFlag, t => t.LoginId, pageIndex, pageSize, ref count)
-        //                   .Include(t => t.Contact)
-        //                   .Include(t => t.Manager.Contact);
+        public Employee GetEmployee(int employeeId)
+        {
+            return _repository.FindBy(t => t.CurrentFlag && t.EmployeeId == employeeId).SingleOrDefault();
+        }
 
-        //    return new EmployeeListViewModel
-        //        {
-        //            Employees = from e in employees.AsEnumerable()
-        //                        select new EmployeeViewModel
-        //                            {
-        //                                EmployeeId = e.EmployeeId,
-        //                                LoginId = e.LoginId,
-        //                                NationalIdNumber = e.NationalIdNumber,
-        //                                Name = e.Contact.FullName,
-        //                                Email = e.Contact.EmailAddress,
-        //                                Phone = e.Contact.Phone,
-        //                                Title = e.Title,
-        //                                ManagerId = e.ManagerId ?? 0,
-        //                                ManagerName = e.Manager.Contact.FullName,
-        //                                BirthDate = e.BirthDate.ToString("yyyy-MM-dd"),
-        //                                MaritalStatus = e.MaritalStatus == "M" ? "已婚" : "未婚",
-        //                                Gender = e.Gender == "M" ? "男" : "女",
-        //                                HireDate = e.HireDate.ToString("yyyy-MM-dd")
-        //                            },
-        //            PageInfo = new PageInfo
-        //                {
-        //                    CurrentPage = pageIndex,
-        //                    ItemsPerPage = pageSize,
-        //                    TotalItems = _repository.FindAll().Count(t => t.CurrentFlag)
-        //                }
 
-        //        };
-
-        //}
+        public void RegisterToSave(Employee employee)
+        {
+            _repository.Update(employee);
+        }
     }
 }

@@ -49,6 +49,11 @@ namespace AdventureWorks.DataAccess.Repositories
             return DbContext.FindAll<TEntity>();
         }
 
+        public TEntity FindBy(int id)
+        {
+            return DbContext.FindAll<TEntity>().Find(id);
+        }
+
         #region IUnitOfWorkRepository implementation
 
         public void PersistCreation(TEntity entity)
@@ -67,8 +72,6 @@ namespace AdventureWorks.DataAccess.Repositories
         }
 
         #endregion
-
-
 
         public IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter,
                                                 Expression<Func<TEntity, TKey>> orderby, int pageIndex, int pageSize,

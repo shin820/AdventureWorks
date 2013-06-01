@@ -121,7 +121,7 @@ namespace AdventureWorks.DataAccess
                         if (entity != null)
                         {
                             entity.State = State.UnChanged;
-                            entity.OriginalValues = BuildOriginalValues(this.Entry(entity).OriginalValues);
+                            entity.OriginalValues = BuildOriginalValues(this.Entry(entity).OriginalValues);                       
                         }
                     };
         }

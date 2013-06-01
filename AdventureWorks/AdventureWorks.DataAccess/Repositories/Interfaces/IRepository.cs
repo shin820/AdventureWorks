@@ -20,7 +20,8 @@ namespace AdventureWorks.DataAccess.Repositories.Interfaces
         IQueryable<TEntity> FindBy<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> orderby,
                                          OrderByType orderByType, int pageIndex, int pageSize, ref int count);
 
-        //TEntity Find(TEntityKey id);
+        //TEntity Find<TEntityKey>(TEntityKey id);
+        TEntity FindBy(int id);
 
         //void SaveChanges(TEntity root);
         //void SaveChanges();

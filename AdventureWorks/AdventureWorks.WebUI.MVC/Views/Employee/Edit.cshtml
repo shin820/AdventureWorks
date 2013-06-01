@@ -1,0 +1,44 @@
+﻿@model AdventureWorks.Model.HumanResources.Employee
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Edit Employee</legend>
+        @Html.HiddenFor(m=>m.EmployeeId)
+        @Html.HiddenFor(m=>m.ManagerId)
+        @Html.HiddenFor(m=>m.ContactId)
+        <p>
+            @Html.LabelFor(m => m.NationalIdNumber)
+            @Html.EditorFor(m => m.NationalIdNumber)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Title)
+            @Html.EditorFor(m => m.Title)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.BirthDate)
+            @Html.EditorFor(m => m.BirthDate)
+        </p>
+        <p>
+            @Html.LabelFor(m=>m.MaritalStatus)
+            @Html.DropDownListFor(m=>m.MaritalStatus,ViewBag.MaritalStatusList as SelectList)
+        </p>
+        <p>
+            @Html.LabelFor(m=>m.Gender)
+            @Html.DropDownListFor(m=>m.Gender,ViewBag.GenderList as SelectList)
+        </p>
+        <p>
+            @Html.LabelFor(m=>m.SalariedFlag,"工作分类")
+            @Html.DropDownListFor(m=>m.SalariedFlag,ViewBag.SalaryTypeList as SelectList)
+        </p>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}

@@ -14,15 +14,21 @@ namespace AdventureWorks.WebUI.MVC
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: null,
-                url: "Page{page}",
+                name: "Pagination",
+                url: "{controller}/{action}/Page{page}",
                 defaults: new {controller = "Employee", action = "Details"}
+                );
+
+            routes.MapRoute(
+                name: "",
+                url: "{controller}/{action}/{id}",
+                defaults: new { id = UrlParameter.Optional }
                 );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}",
-                defaults: new {controller = "Employee", action = "Details"}
+                defaults: new {controller = "Home", action = "Index"}
                 );
         }
     }

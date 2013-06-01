@@ -19,6 +19,7 @@
             <td>婚姻状态</td>
             <td>性别</td>
             <td>入职日期</td>
+            <td></td>
         </tr>
     </thead>
     @foreach (var item in Model.Employees)
@@ -35,6 +36,7 @@
             <td>@item.MaritalStatus</td>
             <td>@item.Gender</td>
             <td>@item.HireDate</td>
+            <td>@Html.ActionLink("Edit", "Edit", new {id = @item.EmployeeId})</td>
         </tr>
     }
 </table>

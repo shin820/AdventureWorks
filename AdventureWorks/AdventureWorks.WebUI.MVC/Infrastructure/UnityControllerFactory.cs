@@ -46,7 +46,7 @@ namespace AdventureWorks.WebUI.MVC.Infrastructure
                 );
 
             _container.RegisterType<EmployeeController>(
-                new InjectionConstructor(_container.Resolve<IEmployeeService>())
+                new InjectionConstructor(_container.Resolve<IEmployeeService>(), _container.Resolve<IUnitOfWork>())
                 );
         }
     }
