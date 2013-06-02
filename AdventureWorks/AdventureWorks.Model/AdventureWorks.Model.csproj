@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="AwBuildVersion.cs" />
     <Compile Include="DatabaseLog.cs" />
+    <Compile Include="DataDefinition.cs" />
     <Compile Include="ErrorLog.cs" />
     <Compile Include="HumanResources\Department.cs" />
     <Compile Include="HumanResources\Employee.cs" />

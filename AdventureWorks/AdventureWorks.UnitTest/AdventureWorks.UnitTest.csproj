@@ -60,6 +60,7 @@
     <Compile Include="TestHelper\FakeRepository.cs" />
     <Compile Include="TestHelper\GenericFakeDbSet.cs" />
     <Compile Include="GenericFakeDbSetTest.cs" />
+    <Compile Include="ViewModel\EmployeeEditViewModelTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
