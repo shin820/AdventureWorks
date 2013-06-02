@@ -19,8 +19,9 @@
             <td>生日</td>
             <td>婚姻状态</td>
             <td>性别</td>
+            <td>工作类型</td>
             <td>入职日期</td>
-            <td></td>
+            <td>操作</td>
         </tr>
     </thead>
     @foreach (var item in Model.Employees)
@@ -35,10 +36,12 @@
             <td>@item.Title</td>
             <td>@item.ManagerName</td>
             <td>@item.BirthDate</td>
-            <td>@item.MaritalStatus</td>
-            <td>@item.Gender</td>
+            <td>@item.MartialStatusDisplay</td>
+            <td>@item.GenderDisplay</td>
+            <td>@item.SalaryDisplay</td>
             <td>@item.HireDate</td>
-            <td>@Html.ActionLink("Edit", "Edit", new {id = @item.EmployeeId})</td>
+            <td>@Html.ActionLink("修改", "Edit", new {id = @item.EmployeeId})</td>
+            <td>@Html.ActionLink("删除", "Delete", new {id = @item.EmployeeId})</td>
         </tr>
     }
 </table>

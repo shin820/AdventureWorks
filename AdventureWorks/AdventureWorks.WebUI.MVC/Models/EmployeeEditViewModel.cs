@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AdventureWorks.Model;
 
 namespace AdventureWorks.WebUI.MVC.Models
 {
@@ -21,18 +22,21 @@ namespace AdventureWorks.WebUI.MVC.Models
         public short SickLeaveHours { get; set; }
 
         private Lazy<SelectList> _martialStatusList;
+
         public SelectList MartialStatusList
         {
             get { return _martialStatusList.Value; }
         }
 
         private Lazy<SelectList> _genderList;
+
         public SelectList GenderList
         {
             get { return _genderList.Value; }
         }
 
         private Lazy<SelectList> _salaryTypeList;
+
         public SelectList SalaryTypeList
         {
             get { return _salaryTypeList.Value; }
@@ -44,8 +48,8 @@ namespace AdventureWorks.WebUI.MVC.Models
                 {
                     var martialList = new List<KeyValuePair<string, string>>
                         {
-                            new KeyValuePair<string, string>("已婚", "M"),
-                            new KeyValuePair<string, string>("未婚", "S")
+                            new KeyValuePair<string, string>("已婚", DataDefinition.MartialStatus.Married),
+                            new KeyValuePair<string, string>("未婚", DataDefinition.MartialStatus.UnMarried)
                         };
                     return CreateSelectList(martialList, this.MaritalStatus);
                 }, true);
@@ -54,8 +58,8 @@ namespace AdventureWorks.WebUI.MVC.Models
                 {
                     var genderList = new List<KeyValuePair<string, string>>
                         {
-                            new KeyValuePair<string, string>("男性", "M"),
-                            new KeyValuePair<string, string>("女性", "F")
+                            new KeyValuePair<string, string>("男性", DataDefinition.Gender.Male),
+                            new KeyValuePair<string, string>("女性", DataDefinition.Gender.Female)
                         };
                     return CreateSelectList(genderList, this.Gender);
                 }, true);
@@ -72,7 +76,7 @@ namespace AdventureWorks.WebUI.MVC.Models
         }
 
         private SelectList CreateSelectList<TKey, TValue>(IEnumerable<KeyValuePair<TKey, TValue>> keyValuePairs,
-                                                  object selectedValue)
+                                                          object selectedValue)
         {
             return new SelectList(keyValuePairs, "Value", "Key", selectedValue);
         }

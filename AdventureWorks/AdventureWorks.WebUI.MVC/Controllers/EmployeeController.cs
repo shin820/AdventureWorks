@@ -43,7 +43,8 @@ namespace AdventureWorks.WebUI.MVC.Controllers
                             BirthDate = e.BirthDate.ToString("yyyy-MM-dd"),
                             MaritalStatus = e.MaritalStatus,
                             Gender = e.Gender,
-                            HireDate = e.HireDate.ToString("yyyy-MM-dd")
+                            HireDate = e.HireDate.ToString("yyyy-MM-dd"),
+                            SalariedFlag = e.SalariedFlag
                         }),
                     PageInfo = new PageInfo
                         {
