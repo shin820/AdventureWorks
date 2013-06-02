@@ -1,4 +1,4 @@
-﻿@model AdventureWorks.Model.HumanResources.Employee
+﻿@model AdventureWorks.WebUI.MVC.Models.EmployeeEditViewModel
 
 @{
     ViewBag.Title = "Edit";
@@ -10,8 +10,6 @@
     <fieldset>
         <legend>Edit Employee</legend>
         @Html.HiddenFor(m=>m.EmployeeId)
-        @Html.HiddenFor(m=>m.ManagerId)
-        @Html.HiddenFor(m=>m.ContactId)
         <p>
             @Html.LabelFor(m => m.NationalIdNumber)
             @Html.EditorFor(m => m.NationalIdNumber)
@@ -26,15 +24,15 @@
         </p>
         <p>
             @Html.LabelFor(m=>m.MaritalStatus)
-            @Html.DropDownListFor(m=>m.MaritalStatus,ViewBag.MaritalStatusList as SelectList)
+            @Html.DropDownListFor(m=>m.MaritalStatus,Model.MartialStatusList)
         </p>
         <p>
             @Html.LabelFor(m=>m.Gender)
-            @Html.DropDownListFor(m=>m.Gender,ViewBag.GenderList as SelectList)
+            @Html.DropDownListFor(m=>m.Gender,Model.GenderList)
         </p>
         <p>
             @Html.LabelFor(m=>m.SalariedFlag,"工作分类")
-            @Html.DropDownListFor(m=>m.SalariedFlag,ViewBag.SalaryTypeList as SelectList)
+            @Html.DropDownListFor(m=>m.SalariedFlag,Model.SalaryTypeList)
         </p>
 
         <p>

@@ -7,6 +7,6 @@ namespace AdventureWorks.Service
     {
         List<Employee> GetEmployees(int pageIndex, int pageSize, out int count);
         Employee GetEmployee(int employeeId);
-        void RegisterToSave(Employee employee);
+        void UpdateEmployee(Employee employee);
     }
 }

@@ -42,11 +42,11 @@ namespace AdventureWorks.WebUI.MVC.Infrastructure
 
 
             _container.RegisterType<IEmployeeService, EmployeeService>(
-                new InjectionConstructor(_container.Resolve<EmployeeRepository>())
+                new InjectionConstructor(_container.Resolve<EmployeeRepository>(), _container.Resolve<IUnitOfWork>())
                 );
 
             _container.RegisterType<EmployeeController>(
-                new InjectionConstructor(_container.Resolve<IEmployeeService>(), _container.Resolve<IUnitOfWork>())
+                new InjectionConstructor(_container.Resolve<IEmployeeService>())
                 );
         }
     }

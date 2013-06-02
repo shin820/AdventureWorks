@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 using AdventureWorks.DataAccess.Repositories.Interfaces;
 using AdventureWorks.Model.HumanResources;
 using System.Data.Entity;
+using AdventureWorks.DataAccess.UnitOfWork;
 
 namespace AdventureWorks.Service
 {
     public class EmployeeService : IEmployeeService
     {
         private readonly IEmployeeRepository _repository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeeService(IEmployeeRepository repository)
+        public EmployeeService(IEmployeeRepository repository, IUnitOfWork unitOfWork)
         {
             _repository = repository;
+            _unitOfWork = unitOfWork;
         }
 
         public List<Employee> GetEmployees(int pageIndex, int pageSize, out int count)
@@ -37,9 +40,10 @@ namespace AdventureWorks.Service
         }
 
 
-        public void RegisterToSave(Employee employee)
+        public void UpdateEmployee(Employee employee)
         {
             _repository.Update(employee);
+            _unitOfWork.Commit();
         }
     }
 }

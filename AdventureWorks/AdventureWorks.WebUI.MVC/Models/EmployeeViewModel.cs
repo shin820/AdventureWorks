@@ -2,6 +2,7 @@ namespace AdventureWorks.WebUI.MVC.Models
 {
     public class EmployeeViewModel
     {
+        public int RowNumber { get; set; }
         public int EmployeeId { get; set; }
         public string LoginId { get; set; }
         public string NationalIdNumber { get; set; }

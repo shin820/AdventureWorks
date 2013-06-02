@@ -18,7 +18,7 @@ namespace AdventureWorks.UnitTest.Services
         [TestMethod]
         public void ShouldReturnEmployees()
         {
-            EmployeeService service = new EmployeeService(new FakeEmployeeRepository());
+            EmployeeService service = new EmployeeService(new FakeEmployeeRepository(), null);
             int count;
             var result = service.GetEmployees(1, 10, out count).First();
             Assert.AreEqual(1, count);

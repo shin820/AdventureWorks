@@ -19,7 +19,7 @@ namespace AdventureWorks.UnitTest.Controllers
         [TestMethod]
         public void ShouldReturnModelToDetailsView()
         {
-            var controller = new EmployeeController(new FakeEmployeeService(), null);
+            var controller = new EmployeeController(new FakeEmployeeService());
 
             EmployeeListViewModel model = controller.Details(2).Model as EmployeeListViewModel;
             Assert.IsNotNull(model);
@@ -79,7 +79,7 @@ namespace AdventureWorks.UnitTest.Controllers
             }
 
 
-            public void RegisterToSave(Employee employee)
+            public void UpdateEmployee(Employee employee)
             {
                 throw new NotImplementedException();
             }
